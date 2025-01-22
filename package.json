@@ -1,0 +1,19 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "build:css": "sass scss/theme.scss css/style.css --no-source-map --style=compressed",
+    "watch:css": "sass --watch scss/theme.scss:css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.83.4"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}

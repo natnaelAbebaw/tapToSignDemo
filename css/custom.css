@@ -1,0 +1,30 @@
+.custom-btn {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #95aac9;
+  padding: 5px 5px 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.custom-btn:hover {
+  background-color: #f1f6fd;
+  color: #333;
+}
+
+.dropdown-toggle::after {
+  content: "▼";
+  color: #95aac9;
+}
+
+.btn-custom {
+  background-color: #192033;
+}
+
+.btn-custom ion-icon {
+  margin-right: 10px;
+}
+
+.color-green {
+  color: #2992d3;
+}
