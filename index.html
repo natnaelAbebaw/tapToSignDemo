@@ -21,8 +21,15 @@
     <link href="./css/style.css" rel="stylesheet" />
     <link href="./css/custom.css" rel="stylesheet" />
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+
+    <script src="https://unpkg.com/feather-icons"></script>
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
     <!-- Title -->
     <title>Dashkit</title>
   </head>
@@ -1852,7 +1859,7 @@
                       <div class="col-auto me-n3">
                         <div class="btn-group">
                           <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            All Deals
+                            All locations
                           </button>
                           <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Action</a></li>
@@ -1867,7 +1874,7 @@
                       <div class="col-auto me-n3">
                         <div class="btn-group">
                           <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            All Salesperson
+                             Deals
                           </button>
                           <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Action</a></li>
@@ -1879,20 +1886,7 @@
                         </div>
                       </div>
                      
-                      <div class="col-auto me-n3">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            Date
-                          </button>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Separated link</a></li>
-                          </ul>
-                        </div>
-                      </div>
+                  
                      
                      
                       
@@ -1906,7 +1900,8 @@
                       <thead>
                         <tr>
                           <th>
-                            <!-- Checkbox -->
+                        
+                            
                             <div class="form-check mb-n2">
                               <input
                                 class="form-check-input list-checkbox-all"
@@ -1920,58 +1915,186 @@
                             </div>
                           </th>
                           <th>
-                            <a
-                              class="list-sort text-body-secondary"
-                              data-sort="item-name"
-                              href="#"
-                              >All Deals</a
-                            >
+                          
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-checklist dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                All Deals
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li >
+                                  <label  class="dropdown-item" >
+                                    <input type="checkbox"> 
+                                    <span>Test drive</span>
+                                  </label>
+                                </li>
+
+                                <li >
+                                  <label  class="dropdown-item" >
+                                    <input type="checkbox"> 
+                                    <span>WholeSell</span>
+                                  </label>
+                                </li>
+                          
+
+                                <li >
+                                  <label  class="dropdown-item" >
+                                    <input type="checkbox"> 
+                                    <span>Work sheet</span>
+                                  </label>
+                                </li>
+
+                                <li >
+                                  <label  class="dropdown-item" >
+                                    <input type="checkbox"> 
+                                    <span>Car buying</span>
+                                  </label>
+                                </li>
+                              </ul>
+                            </div>
                           </th>
                           <th>
                             <a
                               class="list-sort text-body-secondary"
-                              data-sort="item-title"
+                        
                               href="#"
                               >	Vehicle</a
                             >
                           </th>
                           <th>
-                            <a
-                              class="list-sort text-body-secondary"
-                              data-sort="item-email"
-                              href="#"
-                              >All Salesperson</a
-                            >
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-checklist dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                All SalePerson
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li >
+                                  <label  class="dropdown-item" >
+                                    <input type="checkbox"> 
+                                    <span>Test drive</span>
+                                  </label>
+                                </li>
+
+                                <li >
+                                  <label  class="dropdown-item" >
+                                    <input type="checkbox"> 
+                                    <span>WholeSell</span>
+                                  </label>
+                                </li>
+                          
+
+                                <li >
+                                  <label  class="dropdown-item" >
+                                    <input type="checkbox"> 
+                                    <span>Work sheet</span>
+                                  </label>
+                                </li>
+
+                                <li >
+                                  <label  class="dropdown-item" >
+                                    <input type="checkbox"> 
+                                    <span>Car buying</span>
+                                  </label>
+                                </li>
+                              
+                              
+                              
+                              </ul>
+                            </div>
                           </th>
                           <th>
                             <a
                               class="list-sort text-body-secondary"
-                              data-sort="item-phone"
+                            
                               href="#"
                               >Signed Pdf</a
                             >
                           </th>
                           <th>
-                            <a
-                              class="list-sort text-body-secondary"
-                              data-sort="item-score"
-                              href="#"
-                              >	
-                              All Deals
-                              </a
-                            >
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-checklist dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                All Deals
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li >
+                                  <label  class="dropdown-item" >
+                                    <input type="checkbox"> 
+                                    <span>Test drive</span>
+                                  </label>
+                                </li>
+
+                                <li >
+                                  <label  class="dropdown-item" >
+                                    <input type="checkbox"> 
+                                    <span>WholeSell</span>
+                                  </label>
+                                </li>
+                          
+
+                                <li >
+                                  <label  class="dropdown-item" >
+                                    <input type="checkbox"> 
+                                    <span>Work sheet</span>
+                                  </label>
+                                </li>
+
+                                <li >
+                                  <label  class="dropdown-item" >
+                                    <input type="checkbox"> 
+                                    <span>Car buying</span>
+                                  </label>
+                                </li>
+                              
+                              
+                              
+                              </ul>
+                            </div>
                           </th>
                           <th >
-                            <a
-                              class="list-sort text-body-secondary"
-                              data-sort="item-company"
-                              href="#"
-                              >Date</a
-                            >
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-checklist dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                Date
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li >
+                                  <label  class="dropdown-item" >
+                                    <input type="checkbox"> 
+                                    <span>Test drive</span>
+                                  </label>
+                                </li>
+
+                                <li >
+                                  <label  class="dropdown-item" >
+                                    <input type="checkbox"> 
+                                    <span>WholeSell</span>
+                                  </label>
+                                </li>
+                          
+
+                                <li >
+                                  <label  class="dropdown-item" >
+                                    <input type="checkbox"> 
+                                    <span>Work sheet</span>
+                                  </label>
+                                </li>
+
+                                <li >
+                                  <label  class="dropdown-item" >
+                                    <input type="checkbox"> 
+                                    <span>Car buying</span>
+                                  </label>
+                                </li>
+                              
+                              
+                              
+                              </ul>
+                            </div>
                           </th>
 
-                          <th class="text-center">
-                            Actions
+                          <th>
+                            &nbsp;&nbsp;&nbsp;Actions
+                          </th>
+                            
+                          <th >
+
                           </th>
                         </tr>
                       </thead>
@@ -2019,30 +2142,49 @@
                               href="tel:1-123-456-7890"
                               >(689) 263-4856</a
                             > -->
-                            <div class="dropdown">
-                              <button class="btn btn-secondary dropdown-toggle custom-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                               Still Preparing
+                           
+
+                            <div class="btn-group mb-2">
+                              <button type="button" class="btn custom-btn">Still Preparing</button>
+                              <button type="button" class="btn custom-btn custom-btn-last dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="visually-hidden">Toggle Dropdown</span>
+                            
                               </button>
+                              
                               <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">
-                                  <ion-icon name="accessibility-outline"></ion-icon>
+                                  <div class="d-flex align-items-center gap-2">
+
+                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-pencil"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M10 18l5 -5a1.414 1.414 0 0 0 -2 -2l-5 5v2h2z" /></svg>
                                   
-                                  <span>Sign other form</span></a></li>
+                                  <span>Sign Another Form</span>
+                                </div>
+                                </a></li>
                                 <li><a class="dropdown-item" href="#">
-                                  <ion-icon name="bag-remove-outline"></ion-icon>
-                                  <span> 3 party trade</span>
+                                  <div  class="d-flex align-items-center gap-2">
+                                  <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-square-number-3"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" /><path d="M10 9a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1" /></svg>
+                                  <span> 3rd Party Trade</span>
+                                </div>
                                  </a></li>
                                 <li><a class="dropdown-item" href="#">
-                                  <ion-icon name="add-circle-outline"></ion-icon>
-                                  <span> Add stips from app</span>
+                                  <div  class="d-flex align-items-center gap-2">
+                                  <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M12 11l0 6" /><path d="M9 14l6 0" /></svg>
+                                  <span> Add Stips From App</span>
+                                </div>
+                                </>
                                  </a></li>
+                                 <div class="dropdown-divider"></div>
                                 <li><a class="dropdown-item" href="#">
-                                  <ion-icon name="trash-outline"></ion-icon>
-                                  <span>delete</span>
+                                  <div class="d-flex align-items-center gap-2">
+                                  <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-trash"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7l16 0" /><path d="M10 11l0 6" /><path d="M14 11l0 6" /><path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" /><path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" /></svg>
+                                  <span>Delete</span>
+                                  </div>
                                   </a></li>
 
                               </ul>
                             </div>
+
+           
                           </td>
                           <td>
                             <!-- Badge -->
@@ -2058,669 +2200,614 @@
                             <a
                               class="item-company text-reset"
                               href="team-overview.html"
-                              >22.01.2025</a
+                              >22/01/2025 20:23</a
                             >
                           </td>
-                          <td class="text-center">
-                            <!-- Dropdown -->
-                            <div class="dropdown">
-                              <a
-                                class="dropdown-ellipses dropdown-toggle"
-                                href="#"
-                                role="button"
-                                data-bs-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                              >
-                              <ion-icon name="ellipsis-vertical"></ion-icon>
-                              </a>
-                              <div class="dropdown-menu dropdown-menu-end">
-                                <a href="#!" class="dropdown-item"> 
-                                  <ion-icon name="document-outline"></ion-icon>
-                                  Request Stips
-                                   </a>
-                                <a href="#!" class="dropdown-item">
-                                  <ion-icon name="star-outline"></ion-icon>
-                                Google Review
-                                </a>
-                                <a href="#!" class="dropdown-item">
-                                  <ion-icon name="calendar-clear-outline"></ion-icon>
-                                  Add notes
-                                </a>
-                                <a href="#!" class="dropdown-item">
-                                  <ion-icon name="mail-unread-outline"></ion-icon>
-                                 Get support
-                                </a>
-                                <a href="#!" class="dropdown-item">
-                                  <ion-icon name="trash-outline"></ion-icon>
-                                  Delete
-                                </a>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
 
-
-                        <tr>
-                          <td>
-                            <!-- Checkbox -->
-                            <div class="form-check">
-                              <input
-                                class="form-check-input list-checkbox"
-                                type="checkbox"
-                                id="listCheckboxSeventeen"
-                              />
-                              <label
-                                class="form-check-label"
-                                for="listCheckboxSeventeen"
-                              ></label>
-                            </div>
-                          </td>
-                          <td>
-                          
-                            <a
-                              class="item-name text-reset"
-                              href="profile-posts.html"
-                              >natnael</a
-                            >
-                          </td>
-                          <td class="">
-                            <!-- Text -->
-                            <span class="item-title">Tesla</span>
-                          </td>
-                          <td>
-                            <!-- Email -->
-                            <a
-                              class="item-email text-reset"
-                              href="mailto:john.doe@company.com"
-                              >natnaell70a@gmail.com</a
-                            >
-                          </td>
-                          <td>
-                            <!-- Phone -->
-                            <!-- <a
-                              class="item-phone text-reset"
-                              href="tel:1-123-456-7890"
-                              >(689) 263-4856</a
-                            > -->
-                            <div class="dropdown">
-                              <button class="btn btn-secondary dropdown-toggle custom-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                               Still Preparing
-                              </button>
-                              <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">
-                                  <ion-icon name="accessibility-outline"></ion-icon>
-                                  
-                                  <span>Sign other form</span></a></li>
-                                <li><a class="dropdown-item" href="#">
-                                  <ion-icon name="bag-remove-outline"></ion-icon>
-                                  <span> 3 party trade</span>
-                                 </a></li>
-                                <li><a class="dropdown-item" href="#">
-                                  <ion-icon name="add-circle-outline"></ion-icon>
-                                  <span> Add stips from app</span>
-                                 </a></li>
-                                <li><a class="dropdown-item" href="#">
-                                  <ion-icon name="trash-outline"></ion-icon>
-                                  <span>delete</span>
-                                  </a></li>
-
-                              </ul>
-                            </div>
-                          </td>
-                          <td>
-                            <!-- Badge -->
-                            <span class="item-score badge text-bg-danger-subtle"
-
-                              >
-                              <ion-icon name="create-outline"></ion-icon>
-                              Preparing</span
-                            >
-                          </td>
-                          <td>
-                            <!-- Link -->
-                            <a
-                              class="item-company text-reset"
-                              href="team-overview.html"
-                              >22.01.2025</a
-                            >
-                          </td>
-                          <td class="text-center">
-                            <!-- Dropdown -->
-                            <div class="dropdown">
-                              <a
-                                class="dropdown-ellipses dropdown-toggle"
-                                href="#"
-                                role="button"
-                                data-bs-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                              >
-                              <ion-icon name="ellipsis-vertical"></ion-icon>
-                              </a>
-                              <div class="dropdown-menu dropdown-menu-end">
-                                <a href="#!" class="dropdown-item"> 
-                                  <ion-icon name="document-outline"></ion-icon>
-                                  Request Stips
-                                   </a>
-                                <a href="#!" class="dropdown-item">
-                                  <ion-icon name="star-outline"></ion-icon>
-                                Google Review
-                                </a>
-                                <a href="#!" class="dropdown-item">
-                                  <ion-icon name="calendar-clear-outline"></ion-icon>
-                                  Add notes
-                                </a>
-                                <a href="#!" class="dropdown-item">
-                                  <ion-icon name="mail-unread-outline"></ion-icon>
-                                 Get support
-                                </a>
-                                <a href="#!" class="dropdown-item">
-                                  <ion-icon name="trash-outline"></ion-icon>
-                                  Delete
-                                </a>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-
-
-                        <tr>
-                          <td>
-                            <!-- Checkbox -->
-                            <div class="form-check">
-                              <input
-                                class="form-check-input list-checkbox"
-                                type="checkbox"
-                                id="listCheckboxSeventeen"
-                              />
-                              <label
-                                class="form-check-label"
-                                for="listCheckboxSeventeen"
-                              ></label>
-                            </div>
-                          </td>
-                          <td>
-                          
-                            <a
-                              class="item-name text-reset"
-                              href="profile-posts.html"
-                              >natnael</a
-                            >
-                          </td>
-                          <td class="">
-                            <!-- Text -->
-                            <span class="item-title">Tesla</span>
-                          </td>
-                          <td>
-                            <!-- Email -->
-                            <a
-                              class="item-email text-reset"
-                              href="mailto:john.doe@company.com"
-                              >natnaell70a@gmail.com</a
-                            >
-                          </td>
-                          <td>
-                            <!-- Phone -->
-                            <!-- <a
-                              class="item-phone text-reset"
-                              href="tel:1-123-456-7890"
-                              >(689) 263-4856</a
-                            > -->
-                            <div class="dropdown">
-                              <button class="btn btn-secondary dropdown-toggle custom-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                               Still Preparing
-                              </button>
-                              <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">
-                                  <ion-icon name="accessibility-outline"></ion-icon>
-                                  
-                                  <span>Sign other form</span></a></li>
-                                <li><a class="dropdown-item" href="#">
-                                  <ion-icon name="bag-remove-outline"></ion-icon>
-                                  <span> 3 party trade</span>
-                                 </a></li>
-                                <li><a class="dropdown-item" href="#">
-                                  <ion-icon name="add-circle-outline"></ion-icon>
-                                  <span> Add stips from app</span>
-                                 </a></li>
-                                <li><a class="dropdown-item" href="#">
-                                  <ion-icon name="trash-outline"></ion-icon>
-                                  <span>delete</span>
-                                  </a></li>
-
-                              </ul>
-                            </div>
-                          </td>
-                          <td>
-                            <!-- Badge -->
-                            <span class="item-score badge text-bg-danger-subtle"
-
-                              >
-                              <ion-icon name="create-outline"></ion-icon>
-                              Preparing</span
-                            >
-                          </td>
-                          <td>
-                            <!-- Link -->
-                            <a
-                              class="item-company text-reset"
-                              href="team-overview.html"
-                              >22.01.2025</a
-                            >
-                          </td>
-                          <td class="text-center">
-                            <!-- Dropdown -->
-                            <div class="dropdown">
-                              <a
-                                class="dropdown-ellipses dropdown-toggle"
-                                href="#"
-                                role="button"
-                                data-bs-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                              >
-                              <ion-icon name="ellipsis-vertical"></ion-icon>
-                              </a>
-                              <div class="dropdown-menu dropdown-menu-end">
-                                <a href="#!" class="dropdown-item"> 
-                                  <ion-icon name="document-outline"></ion-icon>
-                                  Request Stips
-                                   </a>
-                                <a href="#!" class="dropdown-item">
-                                  <ion-icon name="star-outline"></ion-icon>
-                                Google Review
-                                </a>
-                                <a href="#!" class="dropdown-item">
-                                  <ion-icon name="calendar-clear-outline"></ion-icon>
-                                  Add notes
-                                </a>
-                                <a href="#!" class="dropdown-item">
-                                  <ion-icon name="mail-unread-outline"></ion-icon>
-                                 Get support
-                                </a>
-                                <a href="#!" class="dropdown-item">
-                                  <ion-icon name="trash-outline"></ion-icon>
-                                  Delete
-                                </a>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-
-
-                        <tr>
-                          <td>
-                            <!-- Checkbox -->
-                            <div class="form-check">
-                              <input
-                                class="form-check-input list-checkbox"
-                                type="checkbox"
-                                id="listCheckboxSeventeen"
-                              />
-                              <label
-                                class="form-check-label"
-                                for="listCheckboxSeventeen"
-                              ></label>
-                            </div>
-                          </td>
-                          <td>
-                          
-                            <a
-                              class="item-name text-reset"
-                              href="profile-posts.html"
-                              >natnael</a
-                            >
-                          </td>
-                          <td class="">
-                            <!-- Text -->
-                            <span class="item-title">Tesla</span>
-                          </td>
-                          <td>
-                            <!-- Email -->
-                            <a
-                              class="item-email text-reset"
-                              href="mailto:john.doe@company.com"
-                              >natnaell70a@gmail.com</a
-                            >
-                          </td>
-                          <td>
-                            <!-- Phone -->
-                            <!-- <a
-                              class="item-phone text-reset"
-                              href="tel:1-123-456-7890"
-                              >(689) 263-4856</a
-                            > -->
-                            <div class="dropdown">
-                              <button class="btn btn-secondary dropdown-toggle custom-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                               Still Preparing
-                              </button>
-                              <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">
-                                  <ion-icon name="accessibility-outline"></ion-icon>
-                                  
-                                  <span>Sign other form</span></a></li>
-                                <li><a class="dropdown-item" href="#">
-                                  <ion-icon name="bag-remove-outline"></ion-icon>
-                                  <span> 3 party trade</span>
-                                 </a></li>
-                                <li><a class="dropdown-item" href="#">
-                                  <ion-icon name="add-circle-outline"></ion-icon>
-                                  <span> Add stips from app</span>
-                                 </a></li>
-                                <li><a class="dropdown-item" href="#">
-                                  <ion-icon name="trash-outline"></ion-icon>
-                                  <span>delete</span>
-                                  </a></li>
-
-                              </ul>
-                            </div>
-                          </td>
-                          <td>
-                            <!-- Badge -->
-                            <span class="item-score badge text-bg-danger-subtle"
-
-                              >
-                              <ion-icon name="create-outline"></ion-icon>
-                              Preparing</span
-                            >
-                          </td>
-                          <td>
-                            <!-- Link -->
-                            <a
-                              class="item-company text-reset"
-                              href="team-overview.html"
-                              >22.01.2025</a
-                            >
-                          </td>
-                          <td class="text-center">
-                            <!-- Dropdown -->
-                            <div class="dropdown">
-                              <a
-                                class="dropdown-ellipses dropdown-toggle"
-                                href="#"
-                                role="button"
-                                data-bs-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                              >
-                              <ion-icon name="ellipsis-vertical"></ion-icon>
-                              </a>
-                              <div class="dropdown-menu dropdown-menu-end">
-                                <a href="#!" class="dropdown-item"> 
-                                  <ion-icon name="document-outline"></ion-icon>
-                                  Request Stips
-                                   </a>
-                                <a href="#!" class="dropdown-item">
-                                  <ion-icon name="star-outline"></ion-icon>
-                                Google Review
-                                </a>
-                                <a href="#!" class="dropdown-item">
-                                  <ion-icon name="calendar-clear-outline"></ion-icon>
-                                  Add notes
-                                </a>
-                                <a href="#!" class="dropdown-item">
-                                  <ion-icon name="mail-unread-outline"></ion-icon>
-                                 Get support
-                                </a>
-                                <a href="#!" class="dropdown-item">
-                                  <ion-icon name="trash-outline"></ion-icon>
-                                  Delete
-                                </a>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-
-
-
-                        <tr>
-                          <td>
-                            <!-- Checkbox -->
-                            <div class="form-check">
-                              <input
-                                class="form-check-input list-checkbox"
-                                type="checkbox"
-                                id="listCheckboxSeventeen"
-                              />
-                              <label
-                                class="form-check-label"
-                                for="listCheckboxSeventeen"
-                              ></label>
-                            </div>
-                          </td>
-                          <td>
-                          
-                            <a
-                              class="item-name text-reset"
-                              href="profile-posts.html"
-                              >natnael</a
-                            >
-                          </td>
-                          <td class="">
-                            <!-- Text -->
-                            <span class="item-title">Tesla</span>
-                          </td>
-                          <td>
-                            <!-- Email -->
-                            <a
-                              class="item-email text-reset"
-                              href="mailto:john.doe@company.com"
-                              >natnaell70a@gmail.com</a
-                            >
-                          </td>
-                          <td>
-                            <!-- Phone -->
-                            <!-- <a
-                              class="item-phone text-reset"
-                              href="tel:1-123-456-7890"
-                              >(689) 263-4856</a
-                            > -->
-                            <div class="dropdown">
-                              <button class="btn btn-secondary dropdown-toggle custom-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                               Still Preparing
-                              </button>
-                              <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">
-                                  <ion-icon name="accessibility-outline"></ion-icon>
-                                  
-                                  <span>Sign other form</span></a></li>
-                                <li><a class="dropdown-item" href="#">
-                                  <ion-icon name="bag-remove-outline"></ion-icon>
-                                  <span> 3 party trade</span>
-                                 </a></li>
-                                <li><a class="dropdown-item" href="#">
-                                  <ion-icon name="add-circle-outline"></ion-icon>
-                                  <span> Add stips from app</span>
-                                 </a></li>
-                                <li><a class="dropdown-item" href="#">
-                                  <ion-icon name="trash-outline"></ion-icon>
-                                  <span>delete</span>
-                                  </a></li>
-
-                              </ul>
-                            </div>
-                          </td>
-                          <td>
-                            <!-- Badge -->
-                            <span class="item-score badge text-bg-danger-subtle"
-
-                              >
-                              <ion-icon name="create-outline"></ion-icon>
-                              Preparing</span
-                            >
-                          </td>
-                          <td>
-                            <!-- Link -->
-                            <a
-                              class="item-company text-reset"
-                              href="team-overview.html"
-                              >22.01.2025</a
-                            >
-                          </td>
-                          <td class="text-center">
-                            <!-- Dropdown -->
-                            <div class="dropdown">
-                              <a
-                                class="dropdown-ellipses dropdown-toggle"
-                                href="#"
-                                role="button"
-                                data-bs-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                              >
-                              <ion-icon name="ellipsis-vertical"></ion-icon>
-                              </a>
-                              <div class="dropdown-menu dropdown-menu-end">
-                                <a href="#!" class="dropdown-item"> 
-                                  <ion-icon name="document-outline"></ion-icon>
-                                  Request Stips
-                                   </a>
-                                <a href="#!" class="dropdown-item">
-                                  <ion-icon name="star-outline"></ion-icon>
-                                Google Review
-                                </a>
-                                <a href="#!" class="dropdown-item">
-                                  <ion-icon name="calendar-clear-outline"></ion-icon>
-                                  Add notes
-                                </a>
-                                <a href="#!" class="dropdown-item">
-                                  <ion-icon name="mail-unread-outline"></ion-icon>
-                                 Get support
-                                </a>
-                                <a href="#!" class="dropdown-item">
-                                  <ion-icon name="trash-outline"></ion-icon>
-                                  Delete
-                                </a>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-
-
-                        <tr>
-                          <td>
-                            <!-- Checkbox -->
-                            <div class="form-check">
-                              <input
-                                class="form-check-input list-checkbox"
-                                type="checkbox"
-                                id="listCheckboxSeventeen"
-                              />
-                              <label
-                                class="form-check-label"
-                                for="listCheckboxSeventeen"
-                              ></label>
-                            </div>
-                          </td>
-                          <td>
-                          
-                            <a
-                              class="item-name text-reset"
-                              href="profile-posts.html"
-                              >natnael</a
-                            >
-                          </td>
-                          <td class="">
-                            <!-- Text -->
-                            <span class="item-title">Tesla</span>
-                          </td>
-                          <td>
-                            <!-- Email -->
-                            <a
-                              class="item-email text-reset"
-                              href="mailto:john.doe@company.com"
-                              >natnaell70a@gmail.com</a
-                            >
-                          </td>
-                          <td>
-                            <!-- Phone -->
-                            <!-- <a
-                              class="item-phone text-reset"
-                              href="tel:1-123-456-7890"
-                              >(689) 263-4856</a
-                            > -->
-                            <div class="dropdown">
-                              <button class="btn btn-secondary dropdown-toggle custom-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                               Still Preparing
-                              </button>
-                              <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">
-                                  <ion-icon name="accessibility-outline"></ion-icon>
-                                  
-                                  <span>Sign other form</span></a></li>
-                                <li><a class="dropdown-item" href="#">
-                                  <ion-icon name="bag-remove-outline"></ion-icon>
-                                  <span> 3 party trade</span>
-                                 </a></li>
-                                <li><a class="dropdown-item" href="#">
-                                  <ion-icon name="add-circle-outline"></ion-icon>
-                                  <span> Add stips from app</span>
-                                 </a></li>
-                                <li><a class="dropdown-item" href="#">
-                                  <ion-icon name="trash-outline"></ion-icon>
-                                  <span>delete</span>
-                                  </a></li>
-
-                              </ul>
-                            </div>
-                          </td>
-                          <td>
-                            <!-- Badge -->
-                            <span class="item-score badge text-bg-danger-subtle"
-
-                              >
-                              <ion-icon name="create-outline"></ion-icon>
-                              Preparing</span
-                            >
-                          </td>
-                          <td>
-                            <!-- Link -->
-                            <a
-                              class="item-company text-reset"
-                              href="team-overview.html"
-                              >22.01.2025</a
-                            >
-                          </td>
-                          <td class="text-center">
-                            <!-- Dropdown -->
-                            <div class="dropdown">
-                              <a
-                                class="dropdown-ellipses dropdown-toggle"
-                                href="#"
-                                role="button"
-                                data-bs-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                              >
-                              <ion-icon name="ellipsis-vertical"></ion-icon>
-                              </a>
-                              <div class="dropdown-menu dropdown-menu-end">
-                                <a href="#!" class="dropdown-item"> 
-                                  <ion-icon name="document-outline"></ion-icon>
-                                  Request Stips
-                                   </a>
-                                <a href="#!" class="dropdown-item">
-                                  <ion-icon name="star-outline"></ion-icon>
-                                Google Review
-                                </a>
-                                <a href="#!" class="dropdown-item">
-                                  <ion-icon name="calendar-clear-outline"></ion-icon>
-                                  Add notes
-                                </a>
-                                <a href="#!" class="dropdown-item">
-                                  <ion-icon name="mail-unread-outline"></ion-icon>
-                                 Get support
-                                </a>
-                                <a href="#!" class="dropdown-item">
-                                  <ion-icon name="trash-outline"></ion-icon>
-                                  Delete
-                                </a>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
                         
+                          <td >
+
+                           <div class="d-flex align-items-center">
+
+                           
+                             <button class="btn btn-sm">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-import"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M5 13v-8a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2h-5.5m-9.5 -2h7m-3 -3l3 3l-3 3" /></svg>
+              
+                          </button>
+                          <button class="btn btn-sm">
+                          <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-trash"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7l16 0" /><path d="M10 11l0 6" /><path d="M14 11l0 6" /><path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" /><path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" /></svg>
+                        </button>
+
+
+                        <button  class="btn btn-sm">
+                          <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" /></svg>
+                        </button>
+                     
+
+                            <div class="dropdown">
+                               <a
+                                class="dropdown-ellipses dropdown-toggle d-flex justify-content-center align-items-center btn-dropdown"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              > 
+                              <button  class="btn btn-sm">
+                              <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-dots-circle-horizontal"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M8 12l0 .01" /><path d="M12 12l0 .01" /><path d="M16 12l0 .01" /></svg>
+                            </button>
+                              </a>
+                              <div class="dropdown-menu dropdown-menu-end">
+                               
+                                <a href="#!" class="dropdown-item">
+                                  <div class="d-flex align-items-center gap-3">
+                                  <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-pencil-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" /><path d="M13.5 6.5l4 4" /><path d="M16 19h6" /><path d="M19 16v6" /></svg>
+                                  <span>Add Notes</span>
+                                </div>
+                                </a>
+                                <a href="#!" class="dropdown-item">
+                                  <div class="d-flex align-items-center gap-3">
+                                  <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-message-chatbot"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" /><path d="M9.5 9h.01" /><path d="M14.5 9h.01" /><path d="M9.5 13a3.5 3.5 0 0 0 5 0" /></svg>
+                                 <span>Get Support</span>
+                                 </div>
+                                </a>
+                                <a href="#!" class="dropdown-item">
+                                  <div class="d-flex align-items-center gap-3">
+
+                                  <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-notes"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 3m0 2a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2z" /><path d="M9 7l6 0" /><path d="M9 11l6 0" /><path d="M9 15l4 0" /></svg>
+                                  <span>
+                                    Logs
+                                  </span> 
+                                 </div>
+
+                                </a>
+                              </div>
+                            </div>
+
+                          </div>
+                          </td>
+                          <td class="text-center">
+                              <button class="btn btn-white btn-custom-2 ">
+                                <div class="d-flex align-items-center gap-2">
+                                  <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-pencil"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" /><path d="M13.5 6.5l4 4" /></svg>
+                                <span>Edit</span>
+                              </button>
+                          </td>
+
+                        </tr>
+                    
+
+                        <tr>
+                          <td>
+                            <!-- Checkbox -->
+                            <div class="form-check">
+                              <input
+                                class="form-check-input list-checkbox"
+                                type="checkbox"
+                                id="listCheckboxSeventeen"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="listCheckboxSeventeen"
+                              ></label>
+                            </div>
+                          </td>
+                          <td>
+                          
+                            <a
+                              class="item-name text-reset"
+                              href="profile-posts.html"
+                              >natnael</a
+                            >
+                          </td>
+                          <td class="">
+                            <!-- Text -->
+                            <span class="item-title">Tesla</span>
+                          </td>
+                          <td>
+                            <!-- Email -->
+                            <a
+                              class="item-email text-reset"
+                              href="mailto:john.doe@company.com"
+                              >natnaell70a@gmail.com</a
+                            >
+                          </td>
+                          <td>
+                            <!-- Phone -->
+                            <!-- <a
+                              class="item-phone text-reset"
+                              href="tel:1-123-456-7890"
+                              >(689) 263-4856</a
+                            > -->
+                           
+
+                            <div class="btn-group mb-2">
+                              <button type="button" class="btn custom-btn">Still Preparing</button>
+                              <button type="button" class="btn custom-btn custom-btn-last dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="visually-hidden">Toggle Dropdown</span>
+                            
+                              </button>
+                              
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">
+                                  <div class="d-flex align-items-center gap-2">
+
+                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-pencil"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M10 18l5 -5a1.414 1.414 0 0 0 -2 -2l-5 5v2h2z" /></svg>
+                                  
+                                  <span>Sign Another Form</span>
+                                </div>
+                                </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                  <div  class="d-flex align-items-center gap-2">
+                                  <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-square-number-3"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" /><path d="M10 9a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1" /></svg>
+                                  <span> 3rd Party Trade</span>
+                                </div>
+                                 </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                  <div  class="d-flex align-items-center gap-2">
+                                  <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M12 11l0 6" /><path d="M9 14l6 0" /></svg>
+                                  <span> Add Stips From App</span>
+                                </div>
+                                </>
+                                 </a></li>
+                                 <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" href="#">
+                                  <div class="d-flex align-items-center gap-2">
+                                  <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-trash"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7l16 0" /><path d="M10 11l0 6" /><path d="M14 11l0 6" /><path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" /><path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" /></svg>
+                                  <span>Delete</span>
+                                  </div>
+                                  </a></li>
+
+                              </ul>
+                            </div>
+
+           
+                          </td>
+                          <td>
+                            <!-- Badge -->
+                            <span class="item-score badge text-bg-danger-subtle"
+
+                              >
+                              <ion-icon name="create-outline"></ion-icon>
+                              Preparing</span
+                            >
+                          </td>
+                          <td>
+                            <!-- Link -->
+                            <a
+                              class="item-company text-reset"
+                              href="team-overview.html"
+                              >22/01/2025 20:23</a
+                            >
+                          </td>
+
+                        
+                          <td >
+
+                           <div class="d-flex align-items-center">
+
+                           
+                             <button class="btn btn-sm">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-import"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M5 13v-8a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2h-5.5m-9.5 -2h7m-3 -3l3 3l-3 3" /></svg>
+              
+                          </button>
+                          <button class="btn btn-sm">
+                          <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-trash"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7l16 0" /><path d="M10 11l0 6" /><path d="M14 11l0 6" /><path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" /><path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" /></svg>
+                        </button>
+
+
+                        <button  class="btn btn-sm">
+                          <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" /></svg>
+                        </button>
+                     
+
+                            <div class="dropdown">
+                               <a
+                                class="dropdown-ellipses dropdown-toggle d-flex justify-content-center align-items-center btn-dropdown"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              > 
+                              <button  class="btn btn-sm">
+                              <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-dots-circle-horizontal"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M8 12l0 .01" /><path d="M12 12l0 .01" /><path d="M16 12l0 .01" /></svg>
+                            </button>
+                              </a>
+                              <div class="dropdown-menu dropdown-menu-end">
+                               
+                                <a href="#!" class="dropdown-item">
+                                  <div class="d-flex align-items-center gap-3">
+                                  <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-pencil-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" /><path d="M13.5 6.5l4 4" /><path d="M16 19h6" /><path d="M19 16v6" /></svg>
+                                  <span>Add Notes</span>
+                                </div>
+                                </a>
+                                <a href="#!" class="dropdown-item">
+                                  <div class="d-flex align-items-center gap-3">
+                                  <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-message-chatbot"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" /><path d="M9.5 9h.01" /><path d="M14.5 9h.01" /><path d="M9.5 13a3.5 3.5 0 0 0 5 0" /></svg>
+                                 <span>Get Support</span>
+                                 </div>
+                                </a>
+                                <a href="#!" class="dropdown-item">
+                                  <div class="d-flex align-items-center gap-3">
+
+                                  <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-notes"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 3m0 2a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2z" /><path d="M9 7l6 0" /><path d="M9 11l6 0" /><path d="M9 15l4 0" /></svg>
+                                  <span>
+                                    Logs
+                                  </span> 
+                                 </div>
+
+                                </a>
+                              </div>
+                            </div>
+
+                          </div>
+                          </td>
+                          <td class="text-center">
+                              <button class="btn btn-white btn-custom-2 ">
+                                <div class="d-flex align-items-center gap-2">
+                                  <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-pencil"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" /><path d="M13.5 6.5l4 4" /></svg>
+                                <span>Edit</span>
+                              </button>
+                          </td>
+
+                        </tr>
+                    
+
+                        <tr>
+                          <td>
+                            <!-- Checkbox -->
+                            <div class="form-check">
+                              <input
+                                class="form-check-input list-checkbox"
+                                type="checkbox"
+                                id="listCheckboxSeventeen"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="listCheckboxSeventeen"
+                              ></label>
+                            </div>
+                          </td>
+                          <td>
+                          
+                            <a
+                              class="item-name text-reset"
+                              href="profile-posts.html"
+                              >natnael</a
+                            >
+                          </td>
+                          <td class="">
+                            <!-- Text -->
+                            <span class="item-title">Tesla</span>
+                          </td>
+                          <td>
+                            <!-- Email -->
+                            <a
+                              class="item-email text-reset"
+                              href="mailto:john.doe@company.com"
+                              >natnaell70a@gmail.com</a
+                            >
+                          </td>
+                          <td>
+                            <!-- Phone -->
+                            <!-- <a
+                              class="item-phone text-reset"
+                              href="tel:1-123-456-7890"
+                              >(689) 263-4856</a
+                            > -->
+                           
+
+                            <div class="btn-group mb-2">
+                              <button type="button" class="btn custom-btn">Still Preparing</button>
+                              <button type="button" class="btn custom-btn custom-btn-last dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="visually-hidden">Toggle Dropdown</span>
+                            
+                              </button>
+                              
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">
+                                  <div class="d-flex align-items-center gap-2">
+
+                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-pencil"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M10 18l5 -5a1.414 1.414 0 0 0 -2 -2l-5 5v2h2z" /></svg>
+                                  
+                                  <span>Sign Another Form</span>
+                                </div>
+                                </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                  <div  class="d-flex align-items-center gap-2">
+                                  <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-square-number-3"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" /><path d="M10 9a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1" /></svg>
+                                  <span> 3rd Party Trade</span>
+                                </div>
+                                 </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                  <div  class="d-flex align-items-center gap-2">
+                                  <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M12 11l0 6" /><path d="M9 14l6 0" /></svg>
+                                  <span> Add Stips From App</span>
+                                </div>
+                                </>
+                                 </a></li>
+                                 <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" href="#">
+                                  <div class="d-flex align-items-center gap-2">
+                                  <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-trash"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7l16 0" /><path d="M10 11l0 6" /><path d="M14 11l0 6" /><path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" /><path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" /></svg>
+                                  <span>Delete</span>
+                                  </div>
+                                  </a></li>
+
+                              </ul>
+                            </div>
+
+           
+                          </td>
+                          <td>
+                            <!-- Badge -->
+                            <span class="item-score badge text-bg-danger-subtle"
+
+                              >
+                              <ion-icon name="create-outline"></ion-icon>
+                              Preparing</span
+                            >
+                          </td>
+                          <td>
+                            <!-- Link -->
+                            <a
+                              class="item-company text-reset"
+                              href="team-overview.html"
+                              >22/01/2025 20:23</a
+                            >
+                          </td>
+
+                        
+                          <td >
+
+                           <div class="d-flex align-items-center">
+
+                           
+                             <button class="btn btn-sm">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-import"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M5 13v-8a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2h-5.5m-9.5 -2h7m-3 -3l3 3l-3 3" /></svg>
+              
+                          </button>
+                          <button class="btn btn-sm">
+                          <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-trash"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7l16 0" /><path d="M10 11l0 6" /><path d="M14 11l0 6" /><path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" /><path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" /></svg>
+                        </button>
+
+
+                        <button  class="btn btn-sm">
+                          <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" /></svg>
+                        </button>
+                     
+
+                            <div class="dropdown">
+                               <a
+                                class="dropdown-ellipses dropdown-toggle d-flex justify-content-center align-items-center btn-dropdown"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              > 
+                              <button  class="btn btn-sm">
+                              <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-dots-circle-horizontal"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M8 12l0 .01" /><path d="M12 12l0 .01" /><path d="M16 12l0 .01" /></svg>
+                            </button>
+                              </a>
+                              <div class="dropdown-menu dropdown-menu-end">
+                               
+                                <a href="#!" class="dropdown-item">
+                                  <div class="d-flex align-items-center gap-3">
+                                  <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-pencil-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" /><path d="M13.5 6.5l4 4" /><path d="M16 19h6" /><path d="M19 16v6" /></svg>
+                                  <span>Add Notes</span>
+                                </div>
+                                </a>
+                                <a href="#!" class="dropdown-item">
+                                  <div class="d-flex align-items-center gap-3">
+                                  <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-message-chatbot"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" /><path d="M9.5 9h.01" /><path d="M14.5 9h.01" /><path d="M9.5 13a3.5 3.5 0 0 0 5 0" /></svg>
+                                 <span>Get Support</span>
+                                 </div>
+                                </a>
+                                <a href="#!" class="dropdown-item">
+                                  <div class="d-flex align-items-center gap-3">
+
+                                  <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-notes"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 3m0 2a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2z" /><path d="M9 7l6 0" /><path d="M9 11l6 0" /><path d="M9 15l4 0" /></svg>
+                                  <span>
+                                    Logs
+                                  </span> 
+                                 </div>
+
+                                </a>
+                              </div>
+                            </div>
+
+                          </div>
+                          </td>
+                          <td class="text-center">
+                              <button class="btn btn-white btn-custom-2 ">
+                                <div class="d-flex align-items-center gap-2">
+                                  <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-pencil"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" /><path d="M13.5 6.5l4 4" /></svg>
+                                <span>Edit</span>
+                              </button>
+                          </td>
+
+                        </tr>
+                    
+
+                        <tr>
+                          <td>
+                            <!-- Checkbox -->
+                            <div class="form-check">
+                              <input
+                                class="form-check-input list-checkbox"
+                                type="checkbox"
+                                id="listCheckboxSeventeen"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="listCheckboxSeventeen"
+                              ></label>
+                            </div>
+                          </td>
+                          <td>
+                          
+                            <a
+                              class="item-name text-reset"
+                              href="profile-posts.html"
+                              >natnael</a
+                            >
+                          </td>
+                          <td class="">
+                            <!-- Text -->
+                            <span class="item-title">Tesla</span>
+                          </td>
+                          <td>
+                            <!-- Email -->
+                            <a
+                              class="item-email text-reset"
+                              href="mailto:john.doe@company.com"
+                              >natnaell70a@gmail.com</a
+                            >
+                          </td>
+                          <td>
+                            <!-- Phone -->
+                            <!-- <a
+                              class="item-phone text-reset"
+                              href="tel:1-123-456-7890"
+                              >(689) 263-4856</a
+                            > -->
+                           
+
+                            <div class="btn-group mb-2">
+                              <button type="button" class="btn custom-btn">Still Preparing</button>
+                              <button type="button" class="btn custom-btn custom-btn-last dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="visually-hidden">Toggle Dropdown</span>
+                            
+                              </button>
+                              
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">
+                                  <div class="d-flex align-items-center gap-2">
+
+                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-pencil"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M10 18l5 -5a1.414 1.414 0 0 0 -2 -2l-5 5v2h2z" /></svg>
+                                  
+                                  <span>Sign Another Form</span>
+                                </div>
+                                </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                  <div  class="d-flex align-items-center gap-2">
+                                  <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-square-number-3"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" /><path d="M10 9a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1" /></svg>
+                                  <span> 3rd Party Trade</span>
+                                </div>
+                                 </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                  <div  class="d-flex align-items-center gap-2">
+                                  <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M12 11l0 6" /><path d="M9 14l6 0" /></svg>
+                                  <span> Add Stips From App</span>
+                                </div>
+                                </>
+                                 </a></li>
+                                 <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" href="#">
+                                  <div class="d-flex align-items-center gap-2">
+                                  <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-trash"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7l16 0" /><path d="M10 11l0 6" /><path d="M14 11l0 6" /><path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" /><path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" /></svg>
+                                  <span>Delete</span>
+                                  </div>
+                                  </a></li>
+
+                              </ul>
+                            </div>
+
+           
+                          </td>
+                          <td>
+                            <!-- Badge -->
+                            <span class="item-score badge text-bg-danger-subtle"
+
+                              >
+                              <ion-icon name="create-outline"></ion-icon>
+                              Preparing</span
+                            >
+                          </td>
+                          <td>
+                            <!-- Link -->
+                            <a
+                              class="item-company text-reset"
+                              href="team-overview.html"
+                              >22/01/2025 20:23</a
+                            >
+                          </td>
+
+                        
+                          <td >
+
+                           <div class="d-flex align-items-center">
+
+                           
+                             <button class="btn btn-sm">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-import"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M5 13v-8a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2h-5.5m-9.5 -2h7m-3 -3l3 3l-3 3" /></svg>
+              
+                          </button>
+                          <button class="btn btn-sm">
+                          <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-trash"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7l16 0" /><path d="M10 11l0 6" /><path d="M14 11l0 6" /><path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" /><path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" /></svg>
+                        </button>
+
+
+                        <button  class="btn btn-sm">
+                          <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" /></svg>
+                        </button>
+                     
+
+                            <div class="dropdown">
+                               <a
+                                class="dropdown-ellipses dropdown-toggle d-flex justify-content-center align-items-center btn-dropdown"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              > 
+                              <button  class="btn btn-sm">
+                              <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-dots-circle-horizontal"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M8 12l0 .01" /><path d="M12 12l0 .01" /><path d="M16 12l0 .01" /></svg>
+                            </button>
+                              </a>
+                              <div class="dropdown-menu dropdown-menu-end">
+                               
+                                <a href="#!" class="dropdown-item">
+                                  <div class="d-flex align-items-center gap-3">
+                                  <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-pencil-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" /><path d="M13.5 6.5l4 4" /><path d="M16 19h6" /><path d="M19 16v6" /></svg>
+                                  <span>Add Notes</span>
+                                </div>
+                                </a>
+                                <a href="#!" class="dropdown-item">
+                                  <div class="d-flex align-items-center gap-3">
+                                  <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-message-chatbot"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" /><path d="M9.5 9h.01" /><path d="M14.5 9h.01" /><path d="M9.5 13a3.5 3.5 0 0 0 5 0" /></svg>
+                                 <span>Get Support</span>
+                                 </div>
+                                </a>
+                                <a href="#!" class="dropdown-item">
+                                  <div class="d-flex align-items-center gap-3">
+
+                                  <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-notes"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 3m0 2a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2z" /><path d="M9 7l6 0" /><path d="M9 11l6 0" /><path d="M9 15l4 0" /></svg>
+                                  <span>
+                                    Logs
+                                  </span> 
+                                 </div>
+
+                                </a>
+                              </div>
+                            </div>
+
+                          </div>
+                          </td>
+                          <td class="text-center">
+                              <button class="btn btn-white btn-custom-2 ">
+                                <div class="d-flex align-items-center gap-2">
+                                  <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-pencil"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" /><path d="M13.5 6.5l4 4" /></svg>
+                                <span>Edit</span>
+                              </button>
+                          </td>
+
+                        </tr>
+                    
+                       
                       </tbody>
                     </table>
                   </div>

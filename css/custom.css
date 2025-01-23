@@ -1,24 +1,53 @@
 .custom-btn {
-  background-color: #fff;
+  background-color: #f9fbfd;
   color: #333;
-  border: 1px solid #95aac9;
+  border: 1px solid #bcd3f6;
   padding: 5px 5px 5px 10px;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.custom-btn:hover {
-  background-color: #f1f6fd;
-  color: #333;
+.custom-btn-last {
+  border-left: 1px solid #f9fbfd;
 }
 
-.dropdown-toggle::after {
-  content: "▼";
-  color: #95aac9;
+.custom-btn:hover {
+  background-color: #f1f6fd;
+  border: 1px solid #95aac9;
+  color: #333;
 }
 
 .btn-custom {
   background-color: #192033;
+  border: none;
+}
+
+.btn-custom:nth-child(1) {
+  background-color: #192033;
+}
+
+.btn-custom:nth-child(2) {
+  background-color: #ffffff;
+  border: 1px solid #b8c9e2;
+  color: #192033;
+}
+
+.btn-custom:nth-child(3) {
+  background-color: #ffffff;
+  border: 1px solid #b8c9e2;
+  color: #192033;
+}
+
+.btn-custom:nth-child(4) {
+  background-color: #ffffff;
+  border: 1px solid #b8c9e2;
+  color: #192033;
+}
+
+.btn-custom:nth-child(5) {
+  background-color: #ffffff;
+  border: 1px solid #b8c9e2;
+  color: #192033;
 }
 
 .btn-custom ion-icon {
@@ -27,4 +56,61 @@
 
 .color-green {
   color: #2992d3;
+}
+
+.btn-custom-2 {
+  background-color: #f1f6fd;
+  color: #5b6a80;
+  border: 1px solid #cddcf3 !important;
+  border: none;
+}
+
+.btn-custom-2:hover {
+  background-color: #e4effa;
+  border: 1px solid #bcd3f6;
+  color: #333;
+}
+
+.btn-dropdown {
+  color: #192033;
+}
+
+.checkbox-menu li label {
+  display: block;
+  padding: 3px 10px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap;
+  margin: 0;
+  transition: background-color 0.4s ease;
+}
+.checkbox-menu li input {
+  margin: 0px 5px;
+  top: 2px;
+  position: relative;
+}
+
+.checkbox-menu li.active label {
+  background-color: #cbcbff;
+  font-weight: bold;
+}
+
+.checkbox-menu li label:hover,
+.checkbox-menu li label:focus {
+  background-color: #f5f5f5;
+}
+
+.checkbox-menu li.active label:hover,
+.checkbox-menu li.active label:focus {
+  background-color: #b8b8ff;
+}
+
+.btn-checklist {
+  color: #95aac9;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 2px 10px;
 }

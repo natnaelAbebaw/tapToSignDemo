@@ -4,7 +4,8 @@
   "main": "script.js",
   "scripts": {
     "build:css": "sass scss/theme.scss css/style.css --no-source-map --style=compressed",
-    "watch:css": "sass --watch scss/theme.scss:css/style.css"
+    "watch:css": "sass --watch scss/theme.scss:css/style.css",
+    "start": "serve"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +15,9 @@
     "sass": "^1.83.4"
   },
   "dependencies": {
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "feather-icons": "^4.29.2",
+    "serve": "^14.2.4"
   }
 }
