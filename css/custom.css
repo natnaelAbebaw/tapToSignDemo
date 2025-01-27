@@ -114,3 +114,33 @@
   font-weight: 500;
   padding: 2px 10px;
 }
+
+.form-switch > .form-check-input {
+  height: 15px;
+  width: 30px;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-check-label {
+  color: #6e84a3;
+}
+
+.more-options {
+  transform: translateX(-25px);
+}
+
+.more-options-list {
+  font-size: 14px !important;
+}
+
+.brandLogo {
+  font-family: "Dancing Script", sans-serif;
+  color: #2c7be5;
+  font-weight: 700;
+  font-size: 24px;
+}

@@ -17,6 +17,9 @@
       crossorigin="anonymous"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
     <!-- Map CSS -->
     <link href="./css/style.css" rel="stylesheet" />
     <link href="./css/custom.css" rel="stylesheet" />
@@ -31,1727 +34,415 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     
     <!-- Title -->
-    <title>Dashkit</title>
+    <title>Tap to sign Demo</title>
   </head>
   <body>
     <!-- MODALS -->
     <!-- Modal: Members -->
-    <div
-      class="modal fade"
-      id="modalMembers"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-card card" data-list='{"valueNames": ["name"]}'>
-            <div class="card-header">
-              <!-- Title -->
-              <h4 class="card-header-title" id="exampleModalCenterTitle">
-                Add a member
-              </h4>
-
-              <!-- Close -->
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="card-header">
-              <!-- Form -->
-              <form>
-                <div
-                  class="input-group input-group-flush input-group-merge input-group-reverse"
-                >
-                  <input
-                    class="form-control list-search"
-                    type="search"
-                    placeholder="Search"
-                  />
-                  <div class="input-group-text">
-                    <ion-icon name="search-outline"></ion-icon>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div class="card-body">
-              <!-- List group -->
-              <ul class="list-group list-group-flush list my-n3">
-                <li class="list-group-item">
-                  <div class="row align-items-center">
-                    <div class="col-auto">
-                      <!-- Avatar -->
-                      <a href="./profile-posts.html" class="avatar">
-                        <img
-                          src="./assets/img/avatars/profiles/avatar-5.jpg"
-                          alt="..."
-                          class="avatar-img rounded-circle"
-                        />
-                      </a>
-                    </div>
-                    <div class="col ms-n2">
-                      <!-- Title -->
-                      <h4 class="mb-1 name">
-                        <a href="./profile-posts.html">Miyah Myles</a>
-                      </h4>
-
-                      <!-- Time -->
-                      <p class="small mb-0">
-                        <span class="text-success">●</span> Online
-                      </p>
-                    </div>
-                    <div class="col-auto">
-                      <!-- Button -->
-                      <a href="#!" class="btn btn-sm btn-white"> Add </a>
-                    </div>
-                  </div>
-                  <!-- / .row -->
-                </li>
-                <li class="list-group-item">
-                  <div class="row align-items-center">
-                    <div class="col-auto">
-                      <!-- Avatar -->
-                      <a href="./profile-posts.html" class="avatar">
-                        <img
-                          src="./assets/img/avatars/profiles/avatar-6.jpg"
-                          alt="..."
-                          class="avatar-img rounded-circle"
-                        />
-                      </a>
-                    </div>
-                    <div class="col ms-n2">
-                      <!-- Title -->
-                      <h4 class="mb-1 name">
-                        <a href="./profile-posts.html">Ryu Duke</a>
-                      </h4>
-
-                      <!-- Time -->
-                      <p class="small mb-0">
-                        <span class="text-success">●</span> Online
-                      </p>
-                    </div>
-                    <div class="col-auto">
-                      <!-- Button -->
-                      <a href="#!" class="btn btn-sm btn-white"> Add </a>
-                    </div>
-                  </div>
-                  <!-- / .row -->
-                </li>
-                <li class="list-group-item">
-                  <div class="row align-items-center">
-                    <div class="col-auto">
-                      <!-- Avatar -->
-                      <a href="./profile-posts.html" class="avatar">
-                        <img
-                          src="./assets/img/avatars/profiles/avatar-7.jpg"
-                          alt="..."
-                          class="avatar-img rounded-circle"
-                        />
-                      </a>
-                    </div>
-                    <div class="col ms-n2">
-                      <!-- Title -->
-                      <h4 class="mb-1 name">
-                        <a href="./profile-posts.html">Glen Rouse</a>
-                      </h4>
-
-                      <!-- Time -->
-                      <p class="small mb-0">
-                        <span class="text-warning">●</span> Busy
-                      </p>
-                    </div>
-                    <div class="col-auto">
-                      <!-- Button -->
-                      <a href="#!" class="btn btn-sm btn-white"> Add </a>
-                    </div>
-                  </div>
-                  <!-- / .row -->
-                </li>
-                <li class="list-group-item">
-                  <div class="row align-items-center">
-                    <div class="col-auto">
-                      <!-- Avatar -->
-                      <a href="./profile-posts.html" class="avatar">
-                        <img
-                          src="./assets/img/avatars/profiles/avatar-8.jpg"
-                          alt="..."
-                          class="avatar-img rounded-circle"
-                        />
-                      </a>
-                    </div>
-                    <div class="col ms-n2">
-                      <!-- Title -->
-                      <h4 class="mb-1 name">
-                        <a href="./profile-posts.html">Grace Gross</a>
-                      </h4>
-
-                      <!-- Time -->
-                      <p class="small mb-0">
-                        <span class="text-danger">●</span> Offline
-                      </p>
-                    </div>
-                    <div class="col-auto">
-                      <!-- Button -->
-                      <a href="#!" class="btn btn-sm btn-white"> Add </a>
-                    </div>
-                  </div>
-                  <!-- / .row -->
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal: Kanban task -->
-    <div
-      class="modal fade"
-      id="modalKanbanTask"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content bg-lighter">
-          <div class="modal-body">
-            <!-- Header -->
-            <div class="row">
-              <div class="col">
-                <!-- Prettitle -->
-                <h6 class="text-uppercase text-body-secondary mb-3">
-                  <a href="#!" class="text-reset">How to Use Kanban</a>
-                </h6>
-
-                <!-- Title -->
-                <h2 class="mb-2">Update Dashkit to include new components!</h2>
-
-                <!-- Subtitle -->
-                <p class="text-body-secondary mb-0">
-                  This is a description of this task. Lorem ipsum dolor sit
-                  amet, consectetur adipiscing elit. Vestibulum magna nisi,
-                  ultrices ut pharetra eget.
-                </p>
-              </div>
-              <div class="col-auto">
-                <!-- Close -->
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-            </div>
-            <!-- / .row -->
-
-            <!-- Divider -->
-            <hr class="my-4" />
-
-            <!-- Buttons -->
-            <div class="mb-4">
-              <div class="row">
-                <div class="col">
-                  <!-- Reaction -->
-                  <a href="#!" class="btn btn-sm btn-white"> 😬 1 </a>
-                  <a href="#!" class="btn btn-sm btn-white"> 👍 2 </a>
-                  <a href="#!" class="btn btn-sm btn-white"> Add Reaction </a>
-                </div>
-                <div class="col-auto me-n3">
-                  <!-- Avatar group -->
-                  <div class="avatar-group d-none d-sm-flex">
-                    <a
-                      href="./profile-posts.html"
-                      class="avatar avatar-xs"
-                      data-bs-toggle="tooltip"
-                      title="Ab Hadley"
-                    >
-                      <img
-                        src="./assets/img/avatars/profiles/avatar-2.jpg"
-                        alt="..."
-                        class="avatar-img rounded-circle"
-                      />
-                    </a>
-                    <a
-                      href="./profile-posts.html"
-                      class="avatar avatar-xs"
-                      data-bs-toggle="tooltip"
-                      title="Adolfo Hess"
-                    >
-                      <img
-                        src="./assets/img/avatars/profiles/avatar-3.jpg"
-                        alt="..."
-                        class="avatar-img rounded-circle"
-                      />
-                    </a>
-                    <a
-                      href="./profile-posts.html"
-                      class="avatar avatar-xs"
-                      data-bs-toggle="tooltip"
-                      title="Daniela Dewitt"
-                    >
-                      <img
-                        src="./assets/img/avatars/profiles/avatar-4.jpg"
-                        alt="..."
-                        class="avatar-img rounded-circle"
-                      />
-                    </a>
-                    <a
-                      href="./profile-posts.html"
-                      class="avatar avatar-xs"
-                      data-bs-toggle="tooltip"
-                      title="Miyah Myles"
-                    >
-                      <img
-                        src="./assets/img/avatars/profiles/avatar-5.jpg"
-                        alt="..."
-                        class="avatar-img rounded-circle"
-                      />
-                    </a>
-                  </div>
-                </div>
-                <div class="col-auto">
-                  <!-- Button -->
-                  <a href="#!" class="btn btn-sm btn-white"> Share </a>
-                </div>
-              </div>
-              <!-- / .row -->
-            </div>
-
-            <!-- Card -->
-            <div class="card">
-              <div class="card-header">
-                <!-- Title -->
-                <h4 class="card-header-title">Files</h4>
-
-                <!-- Button -->
-                <a href="#!" class="btn btn-sm btn-white"> Add files </a>
-              </div>
-              <div class="card-body">
-                <div class="list-group list-group-flush my-n3">
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-auto">
-                        <!-- Avatar -->
-                        <a href="./project-overview.html" class="avatar">
-                          <img
-                            src="./assets/img/files/file-1.jpg"
-                            alt="..."
-                            class="avatar-img rounded"
-                          />
-                        </a>
-                      </div>
-                      <div class="col ms-n2">
-                        <!-- Title -->
-                        <h4 class="mb-1">
-                          <a href="./project-overview.html">Launchday logo</a>
-                        </h4>
-
-                        <!-- Time -->
-                        <p class="card-text small text-body-secondary">
-                          1.5mb PNG Dave
-                        </p>
-                      </div>
-                      <div class="col-auto">
-                        <!-- Dropdown -->
-                        <div class="dropdown">
-                          <a
-                            href="#"
-                            class="dropdown-ellipses dropdown-toggle"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                          >
-                            <i class="fe fe-more-vertical"></i>
-                          </a>
-                          <div class="dropdown-menu dropdown-menu-end">
-                            <a href="#!" class="dropdown-item"> Action </a>
-                            <a href="#!" class="dropdown-item">
-                              Another action
-                            </a>
-                            <a href="#!" class="dropdown-item">
-                              Something else here
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- / .row -->
-                  </div>
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-auto">
-                        <!-- Avatar -->
-                        <a href="./project-overview.html" class="avatar">
-                          <img
-                            src="./assets/img/files/file-1.jpg"
-                            alt="..."
-                            class="avatar-img rounded"
-                          />
-                        </a>
-                      </div>
-                      <div class="col ms-n2">
-                        <!-- Title -->
-                        <h4 class="mb-1">
-                          <a href="./project-overview.html">Launchday logo</a>
-                        </h4>
-
-                        <!-- Time -->
-                        <p class="card-text small text-body-secondary">
-                          1.5mb PNG Dave
-                        </p>
-                      </div>
-                      <div class="col-auto">
-                        <!-- Dropdown -->
-                        <div class="dropdown">
-                          <a
-                            href="#"
-                            class="dropdown-ellipses dropdown-toggle"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                          >
-                            <i class="fe fe-more-vertical"></i>
-                          </a>
-                          <div class="dropdown-menu dropdown-menu-end">
-                            <a href="#!" class="dropdown-item"> Action </a>
-                            <a href="#!" class="dropdown-item">
-                              Another action
-                            </a>
-                            <a href="#!" class="dropdown-item">
-                              Something else here
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- / .row -->
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Card -->
-            <div class="card">
-              <div class="card-header">
-                <div class="row">
-                  <div class="col-auto">
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm">
-                      <img
-                        class="avatar-img rounded-circle"
-                        src="./assets/img/avatars/profiles/avatar-1.jpg"
-                        alt="..."
-                      />
-                    </div>
-                  </div>
-                  <div class="col ms-n2">
-                    <!-- Form -->
-                    <form class="mt-1">
-                      <textarea
-                        class="form-control form-control-flush form-control"
-                        data-autosize
-                        rows="1"
-                        placeholder="Leave a comment"
-                      ></textarea>
-                    </form>
-                  </div>
-                  <div class="col-auto align-self-end">
-                    <!-- Icons -->
-                    <div class="text-body-secondary mb-2">
-                      <a href="#!" class="text-reset me-3">
-                        <i class="fe fe-camera"></i>
-                      </a>
-                      <a href="#!" class="text-reset me-3">
-                        <i class="fe fe-paperclip"></i>
-                      </a>
-                      <a href="#!" class="text-reset">
-                        <i class="fe fe-mic"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-body">
-                <!-- Comments -->
-                <div class="comment mb-3">
-                  <div class="row">
-                    <div class="col-auto">
-                      <!-- Avatar -->
-                      <a class="avatar avatar-sm" href="./profile-posts.html">
-                        <img
-                          src="./assets/img/avatars/profiles/avatar-2.jpg"
-                          alt="..."
-                          class="avatar-img rounded-circle"
-                        />
-                      </a>
-                    </div>
-                    <div class="col ms-n2">
-                      <!-- Body -->
-                      <div class="comment-body">
-                        <div class="row">
-                          <div class="col">
-                            <!-- Title -->
-                            <h5 class="comment-title">Ab Hadley</h5>
-                          </div>
-                          <div class="col-auto">
-                            <!-- Time -->
-                            <time class="comment-time"> 11:12 </time>
-                          </div>
-                        </div>
-                        <!-- / .row -->
-
-                        <!-- Text -->
-                        <p class="comment-text">
-                          Looking good Dianna! I like the image grid on the
-                          left, but it feels like a lot to process and doesn't
-                          really <em>show</em> me what the product does? I think
-                          using a short looping video or something similar
-                          demo'ing the product might be better?
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- / .row -->
-                </div>
-                <div class="comment">
-                  <div class="row">
-                    <div class="col-auto">
-                      <!-- Avatar -->
-                      <a class="avatar avatar-sm" href="./profile-posts.html">
-                        <img
-                          src="./assets/img/avatars/profiles/avatar-3.jpg"
-                          alt="..."
-                          class="avatar-img rounded-circle"
-                        />
-                      </a>
-                    </div>
-                    <div class="col ms-n2">
-                      <!-- Body -->
-                      <div class="comment-body">
-                        <div class="row">
-                          <div class="col">
-                            <!-- Title -->
-                            <h5 class="comment-title">Adolfo Hess</h5>
-                          </div>
-                          <div class="col-auto">
-                            <!-- Time -->
-                            <time class="comment-time"> 11:12 </time>
-                          </div>
-                        </div>
-                        <!-- / .row -->
-
-                        <!-- Text -->
-                        <p class="comment-text">
-                          Any chance you're going to link the grid up to a
-                          public gallery of sites built with Launchday?
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- / .row -->
-                </div>
-              </div>
-            </div>
-
-            <!-- Card -->
-            <div class="card mb-0">
-              <div class="card-header">
-                <!-- Title -->
-                <h4 class="card-header-title">Activity</h4>
-              </div>
-              <div class="card-body">
-                <div
-                  class="list-group list-group-flush list-group-activity my-n3"
-                >
-                  <div class="list-group-item">
-                    <div class="row">
-                      <div class="col-auto">
-                        <!-- Avatar -->
-                        <div class="avatar avatar-sm">
-                          <img
-                            class="avatar-img rounded-circle"
-                            src="./assets/img/avatars/profiles/avatar-1.jpg"
-                            alt="..."
-                          />
-                        </div>
-                      </div>
-                      <div class="col ms-n2">
-                        <!-- Heading -->
-                        <h5 class="mb-1">Johnathan Goldstein</h5>
-
-                        <!-- Text -->
-                        <p class="small text-gray-700 mb-0">
-                          Uploaded the files “Launchday Logo” and “Revisiting
-                          the Past”.
-                        </p>
-
-                        <!-- Time -->
-                        <small class="text-body-secondary"> 2m ago </small>
-                      </div>
-                    </div>
-                    <!-- / .row -->
-                  </div>
-                  <div class="list-group-item">
-                    <div class="row">
-                      <div class="col-auto">
-                        <!-- Avatar -->
-                        <div class="avatar avatar-sm">
-                          <img
-                            class="avatar-img rounded-circle"
-                            src="./assets/img/avatars/profiles/avatar-1.jpg"
-                            alt="..."
-                          />
-                        </div>
-                      </div>
-                      <div class="col ms-n2">
-                        <!-- Heading -->
-                        <h5 class="mb-1">Johnathan Goldstein</h5>
-
-                        <!-- Text -->
-                        <p class="small text-gray-700 mb-0">
-                          Uploaded the files “Launchday Logo” and “Revisiting
-                          the Past”.
-                        </p>
-
-                        <!-- Time -->
-                        <small class="text-body-secondary"> 2m ago </small>
-                      </div>
-                    </div>
-                    <!-- / .row -->
-                  </div>
-                  <div class="list-group-item">
-                    <div class="row">
-                      <div class="col-auto">
-                        <!-- Avatar -->
-                        <div class="avatar avatar-sm">
-                          <img
-                            class="avatar-img rounded-circle"
-                            src="./assets/img/avatars/profiles/avatar-1.jpg"
-                            alt="..."
-                          />
-                        </div>
-                      </div>
-                      <div class="col ms-n2">
-                        <!-- Heading -->
-                        <h5 class="mb-1">Johnathan Goldstein</h5>
-
-                        <!-- Text -->
-                        <p class="small text-gray-700 mb-0">
-                          Uploaded the files “Launchday Logo” and “Revisiting
-                          the Past”.
-                        </p>
-
-                        <!-- Time -->
-                        <small class="text-body-secondary"> 2m ago </small>
-                      </div>
-                    </div>
-                    <!-- / .row -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+   
 
     <!-- Modal: Kanban task empty -->
-    <div
-      class="modal fade"
-      id="modalKanbanTaskEmpty"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content bg-lighter">
-          <div class="modal-body">
-            <!-- Header -->
-            <div class="row">
-              <div class="col">
-                <!-- Prettitle -->
-                <h6 class="text-uppercase text-body-secondary mb-3">
-                  <a href="#!" class="text-reset">How to Use Kanban</a>
-                </h6>
-
-                <!-- Title -->
-                <h2 class="mb-2">Update Dashkit to include new components!</h2>
-
-                <!-- Subtitle -->
-                <textarea
-                  class="form-control form-control-flush form-control-auto"
-                  data-autosize
-                  rows="1"
-                  placeholder="Add a description..."
-                ></textarea>
-              </div>
-              <div class="col-auto">
-                <!-- Close -->
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-            </div>
-            <!-- / .row -->
-
-            <!-- Divider -->
-            <hr class="my-4" />
-
-            <!-- Buttons -->
-            <div class="mb-4">
-              <div class="row">
-                <div class="col">
-                  <!-- Button -->
-                  <a href="#!" class="btn btn-sm btn-white"> Add Reaction </a>
-                </div>
-                <div class="col-auto">
-                  <!-- Button -->
-                  <a href="#!" class="btn btn-sm btn-white"> Share </a>
-                </div>
-              </div>
-              <!-- / .row -->
-            </div>
-
-            <!-- Card -->
-            <div class="card">
-              <div class="card-body">
-                <div
-                  class="dropzone dropzone-multiple"
-                  data-dropzone='{"url": "https://"}'
-                >
-                  <!-- Fallback -->
-                  <div class="fallback">
-                    <div class="form-group">
-                      <label class="form-label" for="customFileUpload"
-                        >Choose file</label
-                      >
-                      <input
-                        class="form-control"
-                        type="file"
-                        id="customFileUpload"
-                        multiple
-                      />
-                    </div>
-                  </div>
-
-                  <!-- Preview -->
-                  <ul
-                    class="dz-preview dz-preview-multiple list-group list-group-lg list-group-flush"
-                  >
-                    <li class="list-group-item">
-                      <div class="row align-items-center">
-                        <div class="col-auto">
-                          <!-- Image -->
-                          <div class="avatar">
-                            <img
-                              class="avatar-img rounded"
-                              src="data:image/svg+xml,%3csvg3c/svg%3e"
-                              alt="..."
-                              data-dz-thumbnail
-                            />
-                          </div>
-                        </div>
-                        <div class="col ms-n3">
-                          <!-- Heading -->
-                          <h4 class="mb-1" data-dz-name>...</h4>
-
-                          <!-- Text -->
-                          <small
-                            class="text-body-secondary"
-                            data-dz-size
-                          ></small>
-                        </div>
-                        <div class="col-auto">
-                          <!-- Dropdown -->
-                          <div class="dropdown">
-                            <a
-                              href="#"
-                              class="dropdown-ellipses dropdown-toggle"
-                              role="button"
-                              data-bs-toggle="dropdown"
-                              aria-haspopup="true"
-                              aria-expanded="false"
-                            >
-                              <i class="fe fe-more-vertical"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-end">
-                              <a href="#" class="dropdown-item" data-dz-remove>
-                                Remove
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <!-- Card -->
-            <div class="card">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-auto">
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm">
-                      <img
-                        class="avatar-img rounded-circle"
-                        src="./assets/img/avatars/profiles/avatar-1.jpg"
-                        alt="..."
-                      />
-                    </div>
-                  </div>
-                  <div class="col ms-n2">
-                    <!-- Form -->
-                    <form class="mt-1">
-                      <textarea
-                        class="form-control form-control-flush"
-                        data-autosize
-                        rows="1"
-                        placeholder="Leave a comment"
-                      ></textarea>
-                    </form>
-                  </div>
-                  <div class="col-auto align-self-end">
-                    <!-- Icons -->
-                    <div class="text-body-secondary mb-2">
-                      <a href="#!" class="text-reset me-3">
-                        <i class="fe fe-camera"></i>
-                      </a>
-                      <a href="#!" class="text-reset me-3">
-                        <i class="fe fe-paperclip"></i>
-                      </a>
-                      <a href="#!" class="text-reset">
-                        <i class="fe fe-mic"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  
 
     <!-- OFFCANVAS -->
 
     <!-- Offcanvas: Search -->
-    <div
-      class="offcanvas offcanvas-start"
-      id="sidebarOffcanvasSearch"
-      tabindex="-1"
-    >
-      <div class="offcanvas-body" data-list='{"valueNames": ["name"]}'>
-        <!-- Form -->
-        <form class="mb-4">
-          <div
-            class="input-group input-group-merge input-group-rounded input-group-reverse"
-          >
-            <input
-              class="form-control list-search"
-              type="search"
-              placeholder="Search"
-            />
-            <div class="input-group-text">
-              <ion-icon name="search-outline"></ion-icon>
-            </div>
-          </div>
-        </form>
-
-        <!-- List group -->
-        <div class="my-n3">
-          <div class="list-group list-group-flush list-group-focus list">
-            <a class="list-group-item" href="./team-overview.html">
-              <div class="row align-items-center">
-                <div class="col-auto">
-                  <!-- Avatar -->
-                  <div class="avatar">
-                    <img
-                      src="./assets/img/avatars/teams/team-logo-1.jpg"
-                      alt="..."
-                      class="avatar-img rounded"
-                    />
-                  </div>
-                </div>
-                <div class="col ms-n2">
-                  <!-- Title -->
-                  <h4 class="text-body text-focus mb-1 name">Airbnb</h4>
-
-                  <!-- Time -->
-                  <p class="small text-body-secondary mb-0">
-                    <span class="fe fe-clock"></span>
-                    <time datetime="2018-05-24">Updated 2hr ago</time>
-                  </p>
-                </div>
-              </div>
-              <!-- / .row -->
-            </a>
-            <a class="list-group-item" href="./team-overview.html">
-              <div class="row align-items-center">
-                <div class="col-auto">
-                  <!-- Avatar -->
-                  <div class="avatar">
-                    <img
-                      src="./assets/img/avatars/teams/team-logo-2.jpg"
-                      alt="..."
-                      class="avatar-img rounded"
-                    />
-                  </div>
-                </div>
-                <div class="col ms-n2">
-                  <!-- Title -->
-                  <h4 class="text-body text-focus mb-1 name">
-                    Medium Corporation
-                  </h4>
-
-                  <!-- Time -->
-                  <p class="small text-body-secondary mb-0">
-                    <span class="fe fe-clock"></span>
-                    <time datetime="2018-05-24">Updated 2hr ago</time>
-                  </p>
-                </div>
-              </div>
-              <!-- / .row -->
-            </a>
-            <a class="list-group-item" href="./project-overview.html">
-              <div class="row align-items-center">
-                <div class="col-auto">
-                  <!-- Avatar -->
-                  <div class="avatar avatar-4by3">
-                    <img
-                      src="./assets/img/avatars/projects/project-1.jpg"
-                      alt="..."
-                      class="avatar-img rounded"
-                    />
-                  </div>
-                </div>
-                <div class="col ms-n2">
-                  <!-- Title -->
-                  <h4 class="text-body text-focus mb-1 name">
-                    Homepage Redesign
-                  </h4>
-
-                  <!-- Time -->
-                  <p class="small text-body-secondary mb-0">
-                    <span class="fe fe-clock"></span>
-                    <time datetime="2018-05-24">Updated 4hr ago</time>
-                  </p>
-                </div>
-              </div>
-              <!-- / .row -->
-            </a>
-            <a class="list-group-item" href="./project-overview.html">
-              <div class="row align-items-center">
-                <div class="col-auto">
-                  <!-- Avatar -->
-                  <div class="avatar avatar-4by3">
-                    <img
-                      src="./assets/img/avatars/projects/project-2.jpg"
-                      alt="..."
-                      class="avatar-img rounded"
-                    />
-                  </div>
-                </div>
-                <div class="col ms-n2">
-                  <!-- Title -->
-                  <h4 class="text-body text-focus mb-1 name">Travels & Time</h4>
-
-                  <!-- Time -->
-                  <p class="small text-body-secondary mb-0">
-                    <span class="fe fe-clock"></span>
-                    <time datetime="2018-05-24">Updated 4hr ago</time>
-                  </p>
-                </div>
-              </div>
-              <!-- / .row -->
-            </a>
-            <a class="list-group-item" href="./project-overview.html">
-              <div class="row align-items-center">
-                <div class="col-auto">
-                  <!-- Avatar -->
-                  <div class="avatar avatar-4by3">
-                    <img
-                      src="./assets/img/avatars/projects/project-3.jpg"
-                      alt="..."
-                      class="avatar-img rounded"
-                    />
-                  </div>
-                </div>
-                <div class="col ms-n2">
-                  <!-- Title -->
-                  <h4 class="text-body text-focus mb-1 name">
-                    Safari Exploration
-                  </h4>
-
-                  <!-- Time -->
-                  <p class="small text-body-secondary mb-0">
-                    <span class="fe fe-clock"></span>
-                    <time datetime="2018-05-24">Updated 4hr ago</time>
-                  </p>
-                </div>
-              </div>
-              <!-- / .row -->
-            </a>
-            <a class="list-group-item" href="./profile-posts.html">
-              <div class="row align-items-center">
-                <div class="col-auto">
-                  <!-- Avatar -->
-                  <div class="avatar">
-                    <img
-                      src="./assets/img/avatars/profiles/avatar-1.jpg"
-                      alt="..."
-                      class="avatar-img rounded-circle"
-                    />
-                  </div>
-                </div>
-                <div class="col ms-n2">
-                  <!-- Title -->
-                  <h4 class="text-body text-focus mb-1 name">Dianna Smiley</h4>
-
-                  <!-- Status -->
-                  <p class="text-body small mb-0">
-                    <span class="text-success">●</span> Online
-                  </p>
-                </div>
-              </div>
-              <!-- / .row -->
-            </a>
-            <a class="list-group-item" href="./profile-posts.html">
-              <div class="row align-items-center">
-                <div class="col-auto">
-                  <!-- Avatar -->
-                  <div class="avatar">
-                    <img
-                      src="./assets/img/avatars/profiles/avatar-2.jpg"
-                      alt="..."
-                      class="avatar-img rounded-circle"
-                    />
-                  </div>
-                </div>
-                <div class="col ms-n2">
-                  <!-- Title -->
-                  <h4 class="text-body text-focus mb-1 name">Ab Hadley</h4>
-
-                  <!-- Status -->
-                  <p class="text-body small mb-0">
-                    <span class="text-danger">●</span> Offline
-                  </p>
-                </div>
-              </div>
-              <!-- / .row -->
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+    
 
     <!-- Offcanvas: Activity -->
-    <div
-      class="offcanvas offcanvas-start"
-      id="sidebarOffcanvasActivity"
-      tabindex="-1"
-    >
-      <div class="offcanvas-header">
-        <!-- Title -->
-        <h4 class="offcanvas-title">Notifications</h4>
 
-        <!-- Navs -->
-        <ul class="nav nav-tabs nav-tabs-sm modal-header-tabs">
-          <li class="nav-item">
-            <a
-              class="nav-link active"
-              data-bs-toggle="tab"
-              href="#modalActivityAction"
-              >Action</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" href="#modalActivityUser"
-              >User</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="offcanvas-body">
-        <div class="tab-content">
-          <div class="tab-pane fade show active" id="modalActivityAction">
-            <!-- List group -->
-            <div class="list-group list-group-flush list-group-activity my-n3">
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm">
-                      <div
-                        class="avatar-title fs-lg bg-primary-subtle rounded-circle text-primary"
-                      >
-                        <i class="fe fe-mail"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col ms-n2">
-                    <!-- Heading -->
-                    <h5 class="mb-1">Launchday 1.4.0 update email sent</h5>
+    <div data-bs-theme>
 
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      Sent to all 1,851 subscribers over a 24 hour period
-                    </p>
-
-                    <!-- Time -->
-                    <small class="text-body-secondary"> 2m ago </small>
-                  </div>
-                </div>
-                <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm">
-                      <div
-                        class="avatar-title fs-lg bg-primary-subtle rounded-circle text-primary"
-                      >
-                        <i class="fe fe-archive"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col ms-n2">
-                    <!-- Heading -->
-                    <h5 class="mb-1">New project "Goodkit" created</h5>
-
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      Looks like there might be a new theme soon.
-                    </p>
-
-                    <!-- Time -->
-                    <small class="text-body-secondary"> 2h ago </small>
-                  </div>
-                </div>
-                <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm">
-                      <div
-                        class="avatar-title fs-lg bg-primary-subtle rounded-circle text-primary"
-                      >
-                        <i class="fe fe-code"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col ms-n2">
-                    <!-- Heading -->
-                    <h5 class="mb-1">Dashkit 1.5.0 was deployed.</h5>
-
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      A successful to deploy to production was executed.
-                    </p>
-
-                    <!-- Time -->
-                    <small class="text-body-secondary"> 2m ago </small>
-                  </div>
-                </div>
-                <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm">
-                      <div
-                        class="avatar-title fs-lg bg-primary-subtle rounded-circle text-primary"
-                      >
-                        <i class="fe fe-git-branch"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col ms-n2">
-                    <!-- Heading -->
-                    <h5 class="mb-1">
-                      "Update Dependencies" branch was created.
-                    </h5>
-
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      This branch was created off of the "master" branch.
-                    </p>
-
-                    <!-- Time -->
-                    <small class="text-body-secondary"> 2m ago </small>
-                  </div>
-                </div>
-                <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm">
-                      <div
-                        class="avatar-title fs-lg bg-primary-subtle rounded-circle text-primary"
-                      >
-                        <i class="fe fe-mail"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col ms-n2">
-                    <!-- Heading -->
-                    <h5 class="mb-1">Launchday 1.4.0 update email sent</h5>
-
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      Sent to all 1,851 subscribers over a 24 hour period
-                    </p>
-
-                    <!-- Time -->
-                    <small class="text-body-secondary"> 2m ago </small>
-                  </div>
-                </div>
-                <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm">
-                      <div
-                        class="avatar-title fs-lg bg-primary-subtle rounded-circle text-primary"
-                      >
-                        <i class="fe fe-archive"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col ms-n2">
-                    <!-- Heading -->
-                    <h5 class="mb-1">New project "Goodkit" created</h5>
-
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      Looks like there might be a new theme soon.
-                    </p>
-
-                    <!-- Time -->
-                    <small class="text-body-secondary"> 2h ago </small>
-                  </div>
-                </div>
-                <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm">
-                      <div
-                        class="avatar-title fs-lg bg-primary-subtle rounded-circle text-primary"
-                      >
-                        <i class="fe fe-code"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col ms-n2">
-                    <!-- Heading -->
-                    <h5 class="mb-1">Dashkit 1.5.0 was deployed.</h5>
-
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      A successful to deploy to production was executed.
-                    </p>
-
-                    <!-- Time -->
-                    <small class="text-body-secondary"> 2m ago </small>
-                  </div>
-                </div>
-                <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm">
-                      <div
-                        class="avatar-title fs-lg bg-primary-subtle rounded-circle text-primary"
-                      >
-                        <i class="fe fe-git-branch"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col ms-n2">
-                    <!-- Heading -->
-                    <h5 class="mb-1">
-                      "Update Dependencies" branch was created.
-                    </h5>
-
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      This branch was created off of the "master" branch.
-                    </p>
-
-                    <!-- Time -->
-                    <small class="text-body-secondary"> 2m ago </small>
-                  </div>
-                </div>
-                <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm">
-                      <div
-                        class="avatar-title fs-lg bg-primary-subtle rounded-circle text-primary"
-                      >
-                        <i class="fe fe-mail"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col ms-n2">
-                    <!-- Heading -->
-                    <h5 class="mb-1">Launchday 1.4.0 update email sent</h5>
-
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      Sent to all 1,851 subscribers over a 24 hour period
-                    </p>
-
-                    <!-- Time -->
-                    <small class="text-body-secondary"> 2m ago </small>
-                  </div>
-                </div>
-                <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm">
-                      <div
-                        class="avatar-title fs-lg bg-primary-subtle rounded-circle text-primary"
-                      >
-                        <i class="fe fe-archive"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col ms-n2">
-                    <!-- Heading -->
-                    <h5 class="mb-1">New project "Goodkit" created</h5>
-
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      Looks like there might be a new theme soon.
-                    </p>
-
-                    <!-- Time -->
-                    <small class="text-body-secondary"> 2h ago </small>
-                  </div>
-                </div>
-                <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm">
-                      <div
-                        class="avatar-title fs-lg bg-primary-subtle rounded-circle text-primary"
-                      >
-                        <i class="fe fe-code"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col ms-n2">
-                    <!-- Heading -->
-                    <h5 class="mb-1">Dashkit 1.5.0 was deployed.</h5>
-
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      A successful to deploy to production was executed.
-                    </p>
-
-                    <!-- Time -->
-                    <small class="text-body-secondary"> 2m ago </small>
-                  </div>
-                </div>
-                <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm">
-                      <div
-                        class="avatar-title fs-lg bg-primary-subtle rounded-circle text-primary"
-                      >
-                        <i class="fe fe-git-branch"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col ms-n2">
-                    <!-- Heading -->
-                    <h5 class="mb-1">
-                      "Update Dependencies" branch was created.
-                    </h5>
-
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      This branch was created off of the "master" branch.
-                    </p>
-
-                    <!-- Time -->
-                    <small class="text-body-secondary"> 2m ago </small>
-                  </div>
-                </div>
-                <!-- / .row -->
-              </a>
+    <nav class="navbar navbar-vertical fixed-start navbar-expand-md" id="sidebar">
+      <div class="container-fluid">
+    
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarCollapse" aria-controls="sidebarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Brand -->
+        <a class="navbar-brand d-flex flex-column align-items-center" href="../index.html">
+         
+<svg fill="#2c7be5" class="d-none d-md-block" width="40px" height="40px" viewBox="0 0 24.00 24.00" xmlns="http://www.w3.org/2000/svg" stroke="#2c7be5" stroke-width="0" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.144"></g><g id="SVGRepo_iconCarrier"> <path d="M17,12.5 L17,13.5 C17,13.7761424 16.7761424,14 16.5,14 C16.2238576,14 16,13.7761424 16,13.5 L16,11.5 C16,11.2238576 15.7761424,11 15.5,11 C15.2238576,11 15,11.2238576 15,11.5 L15,13.5 C15,13.7761424 14.7761424,14 14.5,14 C14.2238576,14 14,13.7761424 14,13.5 L14,10.5 C14,10.2238576 13.7761424,10 13.5,10 C13.2238576,10 13,10.2238576 13,10.5 L13,13.5 C13,13.7761424 12.7761424,14 12.5,14 C12.2238576,14 12,13.7761424 12,13.5 L12,5.5 C12,5.22385763 11.7761424,5 11.5,5 C11.2238576,5 11,5.22385763 11,5.5 L11,10.5 L11,13.0474376 C11,13.3783481 10.8839855,13.698786 10.6721417,13.9529985 C10.1720143,14.5531514 9.28006076,14.6342381 8.6799078,14.1341106 L7.75607376,13.3642489 C7.4736449,13.1288916 7.11763998,13 6.75,13 C6.48363526,13 6.24082605,13.1526146 6.12532205,13.3926334 L6.08962348,13.4668155 C5.95447865,13.7476481 5.99541029,14.0814869 6.19439734,14.321352 L10.607865,19.6414804 C11.3217788,20.502054 12.3818498,21 13.5,21 C15.9852814,21 18,18.9852814 18,16.5 L18,12.5 C18,12.2238576 17.7761424,12 17.5,12 C17.2238576,12 17,12.2238576 17,12.5 Z M16.9474595,11.1050446 C17.1184541,11.0372568 17.3048761,11 17.5,11 C18.3284271,11 19,11.6715729 19,12.5 L19,16.5 C19,19.5375661 16.5375661,22 13.5,22 C12.0842933,22 10.7421216,21.3695431 9.83822457,20.279958 L5.42475695,14.9598296 C4.97611908,14.4190278 4.88383427,13.6663521 5.18853292,13.0331845 L5.2242315,12.9590024 C5.50634865,12.3727595 6.09940726,12 6.75,12 C7.35157648,12 7.9341143,12.2109078 8.39625816,12.5960277 L9.3200922,13.3658894 C9.49596826,13.5124527 9.75735708,13.4886901 9.90392046,13.3128141 C9.96600171,13.2383166 10,13.1444116 10,13.0474376 L10,10.5 L10,5.5 C10,4.67157288 10.6715729,4 11.5,4 C12.3284271,4 13,4.67157288 13,5.5 L13,9.08535285 C13.1563895,9.03007711 13.3246823,9 13.5,9 C14.191734,9 14.7741062,9.46823386 14.9474595,10.1050446 C15.1184541,10.0372568 15.3048761,10 15.5,10 C16.191734,10 16.7741062,10.4682339 16.9474595,11.1050446 Z M15,5.5 C15,5.77614237 14.7761424,6 14.5,6 C14.2238576,6 14,5.77614237 14,5.5 C14,4.11928813 12.8807119,3 11.5,3 C10.1192881,3 9,4.11928813 9,5.5 C9,5.77614237 8.77614237,6 8.5,6 C8.22385763,6 8,5.77614237 8,5.5 C8,3.56700338 9.56700338,2 11.5,2 C13.4329966,2 15,3.56700338 15,5.5 Z"></path> </g></svg>
+        <div class="brandLogo ">Tap to Sign</div> 
+        </a>
+    
+        <!-- User (xs) -->
+        <div class="navbar-user d-md-none">
+    
+          <!-- Dropdown -->
+          <div class="dropdown">
+    
+            <!-- Toggle -->
+            <a href="#" id="sidebarIcon" class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="avatar avatar-sm avatar-online">
+                <img src="../assets/img/avatars/profiles/avatar-1.jpg" class="avatar-img rounded-circle" alt="...">
+              </div>
+            </a>
+    
+            <!-- Menu -->
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="sidebarIcon">
+              <a href="../profile-posts.html" class="dropdown-item">Profile</a>
+              <a href="../account-general.html" class="dropdown-item">Settings</a>
+              <hr class="dropdown-divider">
+              <a href="../sign-in.html" class="dropdown-item">Logout</a>
             </div>
+    
           </div>
-          <div class="tab-pane fade" id="modalActivityUser">
-            <!-- List group -->
-            <div class="list-group list-group-flush list-group-activity my-n3">
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm avatar-online">
-                      <img
-                        class="avatar-img rounded-circle"
-                        src="./assets/img/avatars/profiles/avatar-1.jpg"
-                        alt="..."
-                      />
-                    </div>
-                  </div>
-                  <div class="col ms-n2">
-                    <!-- Heading -->
-                    <h5 class="mb-1">Dianna Smiley</h5>
-
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      Uploaded the files "Launchday Logo" and "New Design".
-                    </p>
-
-                    <!-- Time -->
-                    <small class="text-body-secondary"> 2m ago </small>
-                  </div>
-                </div>
-                <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm avatar-online">
-                      <img
-                        class="avatar-img rounded-circle"
-                        src="./assets/img/avatars/profiles/avatar-2.jpg"
-                        alt="..."
-                      />
-                    </div>
-                  </div>
-                  <div class="col ms-n2">
-                    <!-- Heading -->
-                    <h5 class="mb-1">Ab Hadley</h5>
-
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      Shared the "Why Dashkit?" post with 124 subscribers.
-                    </p>
-
-                    <!-- Time -->
-                    <small class="text-body-secondary"> 1h ago </small>
-                  </div>
-                </div>
-                <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm avatar-offline">
-                      <img
-                        class="avatar-img rounded-circle"
-                        src="./assets/img/avatars/profiles/avatar-3.jpg"
-                        alt="..."
-                      />
-                    </div>
-                  </div>
-                  <div class="col ms-n2">
-                    <!-- Heading -->
-                    <h5 class="mb-1">Adolfo Hess</h5>
-
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      Exported sales data from Launchday's subscriber data.
-                    </p>
-
-                    <!-- Time -->
-                    <small class="text-body-secondary"> 3h ago </small>
-                  </div>
-                </div>
-                <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm avatar-online">
-                      <img
-                        class="avatar-img rounded-circle"
-                        src="./assets/img/avatars/profiles/avatar-1.jpg"
-                        alt="..."
-                      />
-                    </div>
-                  </div>
-                  <div class="col ms-n2">
-                    <!-- Heading -->
-                    <h5 class="mb-1">Dianna Smiley</h5>
-
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      Uploaded the files "Launchday Logo" and "New Design".
-                    </p>
-
-                    <!-- Time -->
-                    <small class="text-body-secondary"> 2m ago </small>
-                  </div>
-                </div>
-                <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm avatar-online">
-                      <img
-                        class="avatar-img rounded-circle"
-                        src="./assets/img/avatars/profiles/avatar-2.jpg"
-                        alt="..."
-                      />
-                    </div>
-                  </div>
-                  <div class="col ms-n2">
-                    <!-- Heading -->
-                    <h5 class="mb-1">Ab Hadley</h5>
-
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      Shared the "Why Dashkit?" post with 124 subscribers.
-                    </p>
-
-                    <!-- Time -->
-                    <small class="text-body-secondary"> 1h ago </small>
-                  </div>
-                </div>
-                <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm avatar-offline">
-                      <img
-                        class="avatar-img rounded-circle"
-                        src="./assets/img/avatars/profiles/avatar-3.jpg"
-                        alt="..."
-                      />
-                    </div>
-                  </div>
-                  <div class="col ms-n2">
-                    <!-- Heading -->
-                    <h5 class="mb-1">Adolfo Hess</h5>
-
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      Exported sales data from Launchday's subscriber data.
-                    </p>
-
-                    <!-- Time -->
-                    <small class="text-body-secondary"> 3h ago </small>
-                  </div>
-                </div>
-                <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm avatar-online">
-                      <img
-                        class="avatar-img rounded-circle"
-                        src="./assets/img/avatars/profiles/avatar-1.jpg"
-                        alt="..."
-                      />
-                    </div>
-                  </div>
-                  <div class="col ms-n2">
-                    <!-- Heading -->
-                    <h5 class="mb-1">Dianna Smiley</h5>
-
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      Uploaded the files "Launchday Logo" and "New Design".
-                    </p>
-
-                    <!-- Time -->
-                    <small class="text-body-secondary"> 2m ago </small>
-                  </div>
-                </div>
-                <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm avatar-online">
-                      <img
-                        class="avatar-img rounded-circle"
-                        src="./assets/img/avatars/profiles/avatar-2.jpg"
-                        alt="..."
-                      />
-                    </div>
-                  </div>
-                  <div class="col ms-n2">
-                    <!-- Heading -->
-                    <h5 class="mb-1">Ab Hadley</h5>
-
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      Shared the "Why Dashkit?" post with 124 subscribers.
-                    </p>
-
-                    <!-- Time -->
-                    <small class="text-body-secondary"> 1h ago </small>
-                  </div>
-                </div>
-                <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm avatar-offline">
-                      <img
-                        class="avatar-img rounded-circle"
-                        src="./assets/img/avatars/profiles/avatar-3.jpg"
-                        alt="..."
-                      />
-                    </div>
-                  </div>
-                  <div class="col ms-n2">
-                    <!-- Heading -->
-                    <h5 class="mb-1">Adolfo Hess</h5>
-
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      Exported sales data from Launchday's subscriber data.
-                    </p>
-
-                    <!-- Time -->
-                    <small class="text-body-secondary"> 3h ago </small>
-                  </div>
-                </div>
-                <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm avatar-online">
-                      <img
-                        class="avatar-img rounded-circle"
-                        src="./assets/img/avatars/profiles/avatar-1.jpg"
-                        alt="..."
-                      />
-                    </div>
-                  </div>
-                  <div class="col ms-n2">
-                    <!-- Heading -->
-                    <h5 class="mb-1">Dianna Smiley</h5>
-
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      Uploaded the files "Launchday Logo" and "New Design".
-                    </p>
-
-                    <!-- Time -->
-                    <small class="text-body-secondary"> 2m ago </small>
-                  </div>
-                </div>
-                <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm avatar-online">
-                      <img
-                        class="avatar-img rounded-circle"
-                        src="./assets/img/avatars/profiles/avatar-2.jpg"
-                        alt="..."
-                      />
-                    </div>
-                  </div>
-                  <div class="col ms-n2">
-                    <!-- Heading -->
-                    <h5 class="mb-1">Ab Hadley</h5>
-
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      Shared the "Why Dashkit?" post with 124 subscribers.
-                    </p>
-
-                    <!-- Time -->
-                    <small class="text-body-secondary"> 1h ago </small>
-                  </div>
-                </div>
-                <!-- / .row -->
-              </a>
-              <a class="list-group-item text-reset" href="#!">
-                <div class="row">
-                  <div class="col-auto">
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm avatar-offline">
-                      <img
-                        class="avatar-img rounded-circle"
-                        src="./assets/img/avatars/profiles/avatar-3.jpg"
-                        alt="..."
-                      />
-                    </div>
-                  </div>
-                  <div class="col ms-n2">
-                    <!-- Heading -->
-                    <h5 class="mb-1">Adolfo Hess</h5>
-
-                    <!-- Text -->
-                    <p class="small text-gray-700 mb-0">
-                      Exported sales data from Launchday's subscriber data.
-                    </p>
-
-                    <!-- Time -->
-                    <small class="text-body-secondary"> 3h ago </small>
-                  </div>
-                </div>
-                <!-- / .row -->
-              </a>
-            </div>
-          </div>
+    
         </div>
+    
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="sidebarCollapse">
+    
+          <!-- Form -->
+          <form class="mt-4 mb-3 d-md-none">
+            <div class="input-group input-group-rounded input-group-merge input-group-reverse">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-text">
+                <span class="fe fe-search"></span>
+              </div>
+            </div>
+          </form>
+    
+          <!-- Navigation -->
+
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#sidebarDashboards" role="button">
+                <i class="fe fe-home"></i> Dashboards
+              </a>
+              <!-- <div class="collapse " id="sidebarDashboards">
+                <ul class="nav nav-sm flex-column">
+                  <li class="nav-item">
+                    <a href="../index.html" class="nav-link ">
+                      Default
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../dashboard-project-management.html" class="nav-link ">
+                      Project Management
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../dashboard-ecommerce.html" class="nav-link ">
+                      E-Commerce
+                    </a>
+                  </li>
+                </ul>
+              </div> -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#sidebarPages"  role="button"  aria-controls="sidebarPages">
+                <i class="fe fe-file"></i> Deals
+              </a>
+              
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link collapsed" href="#sidebarDashboards" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+                <i class="fe fe-user"></i> Users
+              </a>
+              <div class="collapse" id="sidebarDashboards" style="">
+                <ul class="nav nav-sm flex-column">
+                  <li class="nav-item">
+                    <a href="./index.html" class="nav-link active">
+                      Add users
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./dashboard-project-management.html" class="nav-link ">
+                      Manage users
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./dashboard-ecommerce.html" class="nav-link ">
+                      Two factor Authentication
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link d-flex gap-2" href="../widgets.html">
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="22"  height="22"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.7"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-user-dollar"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h3" /><path d="M21 15h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5" /><path d="M19 21v1m0 -8v1" /></svg>
+                <span> Manage Lienholder</span>
+              </a>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link d-flex gap-2" href="../widgets.html">
+              <svg  xmlns="http://www.w3.org/2000/svg"  width="22"  height="22"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.6"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-template"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 1a1 1 0 0 1 1 -1h14a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-14a1 1 0 0 1 -1 -1z" /><path d="M4 12m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" /><path d="M14 12l6 0" /><path d="M14 16l6 0" /><path d="M14 20l6 0" /></svg>
+               <span> Manage Plates</span>
+              </a>
+            </li>
+
+            <li class="nav-item d-flex gap-2">
+              <a class="nav-link  d-flex gap-2" href="../widgets.html">
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="22"  height="22"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.6"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-link-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 15l6 -6" /><path d="M11 6l.463 -.536a5 5 0 0 1 7.072 0a4.993 4.993 0 0 1 -.001 7.072" /><path d="M12.603 18.534a5.07 5.07 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" /><path d="M16 19h6" /><path d="M19 16v6" /></svg>
+                <span>Installation Links</span> 
+              </a>
+            </li>
+
+            <li class="nav-item d-flex gap-2">
+              <a class="nav-link  d-flex gap-2" href="../widgets.html">
+             
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="22"  height="22"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-square-key"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 10m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M12.5 11.5l-4 4l1.5 1.5" /><path d="M12 15l-1.5 -1.5" /><path d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" /></svg>
+                <span>Update Keywords</span> 
+            </li>
+
+         
+           
+            <li class="nav-item d-md-none">
+              <a class="nav-link" data-bs-toggle="offcanvas" href="#sidebarOffcanvasActivity" aria-contrtols="sidebarOffcanvasActivity">
+                <span class="fe fe-bell"></span> Notifications
+              </a>
+            </li>
+          </ul>
+    
+          <!-- Divider -->
+          <hr class="navbar-divider my-3">
+    
+          <!-- Heading -->
+          <h6 class="navbar-heading">
+            Connected Devices
+          </h6>
+    
+          <!-- Navigation -->
+          
+          <!-- Push content down -->
+      
+          <ul class="navbar-nav ps-4">
+         <li class="nav-item">
+          <div class="form-check form-switch ">
+            <input class="form-check-input" type="checkbox" role="switch" id="manager" checked="">
+            <label class="form-check-label" for="manager">Manager</label>
+          </div>
+        </li>
+
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="emailMeAllDeals">
+          <label class="form-check-label" for="emailMeAllDeals">Email me all deals</label>
+        </div>
+
+        <li class="nav-item">
+          <div class="form-check form-switch ">
+            <input class="form-check-input" type="checkbox" role="switch" id="eamilMeMyDeals" >
+            <label class="form-check-label" for="eamilMeMyDeals">Email me my deals</label>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <div class="form-check form-switch ">
+            <input class="form-check-input" type="checkbox" role="switch" id="saveToGoogleDrive" >
+            <label class="form-check-label" for="saveToGoogleDrive">Save to Google Drive</label>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <div class="form-check form-switch ">
+            <input class="form-check-input" type="checkbox" role="switch" id="authenticationViaApp" >
+            <label class="form-check-label" for="authenticationViaApp">Authentication Via app</label>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <div class="nav-link collapsed more-options d-flex gap-2" href="#moreOptions" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="moreOptions">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="22"  height="22"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.6"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-adjustments-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 10a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M6 4v4" /><path d="M6 12v8" /><path d="M13.958 15.592a2 2 0 1 0 -1.958 2.408" /><path d="M12 4v10" /><path d="M12 18v2" /><path d="M16 7a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M18 4v1" /><path d="M18 9v3" /><path d="M16 19h6" /><path d="M19 16v6" /></svg>
+            <span>More options</span>
+          </div>
+          <div class="collapse" id="moreOptions" style="">
+            <ul class="nav nav-sm flex-column more-options-list" >
+              <li class="nav-item">
+                <div class="form-check form-switch ">
+                  <input class="form-check-input" type="checkbox" role="switch" id="Signature Datetime" >
+                  <label class="form-check-label" for="Signature Datetime">
+                    Signature Datetime</label>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="form-check form-switch ">
+                  <input class="form-check-input" type="checkbox" role="switch" id="convert 0 to O in Drivers Licence" >
+                  <label class="form-check-label" for="convert 0 to O in Drivers Licence">
+                    convert 0 to O in DL</label>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="form-check form-switch ">
+                  <input class="form-check-input" type="checkbox" role="switch" id="convert 0 to O in Drivers Licence" >
+                  <label class="form-check-label" for="convert 0 to O in Drivers Licence">
+                    EIN convert 1 To I</label>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <div class="form-check form-switch ">
+                  <input class="form-check-input" type="checkbox" role="switch" id="E-Sign Stamp" >
+                  <label class="form-check-label" for="E-Sign Stamp">
+                    Signature Datetime Dealer</label>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <div class="form-check form-switch ">
+                  <input class="form-check-input" type="checkbox" role="switch" id="E-Sign Stamp" >
+                  <label class="form-check-label" for="E-Sign Stamp">
+                    Buyer Mode</label>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <div class="form-check form-switch ">
+                  <input class="form-check-input" type="checkbox" role="switch" id="E-Sign Stamp" >
+                  <label class="form-check-label" for="E-Sign Stamp">
+                    Show all Locations</label>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <div class="form-check form-switch ">
+                  <input class="form-check-input" type="checkbox" role="switch" id="
+Two-Factor Authentication Emai" >
+                  <label class="form-check-label" for="Two-Factor Authentication Email">
+                  
+Two-Factor Authentication Emai</label>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <div class="form-check form-switch ">
+                  <input class="form-check-input" type="checkbox" role="switch" id="Email me E-Sign Link" >
+                  <label class="form-check-label" for="Email me E-Sign Link">
+                    Email me E-Sign Link</label>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <div class="form-check form-switch ">
+                  <input class="form-check-input" type="checkbox" role="switch" id="
+Make Signature Larger" >
+                  <label class="form-check-label" for="Make Signature Larger">
+                 
+Make Signature Larger</label>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <div class="form-check form-switch ">
+                  <input class="form-check-input" type="checkbox" role="switch" id="Generate PDF from Edit Mode" >
+                  <label class="form-check-label" for="Generate PDF from Edit Mode">
+                    Generate PDF from Edit Mode</label>
+                </div>
+              </li>
+
+
+              <li class="nav-item">
+                <div class="form-check form-switch ">
+                  <input class="form-check-input" type="checkbox" role="switch" id="Auto Print to iPad" >
+                  <label class="form-check-label" for="Auto Print to iPad">
+                    Auto Print to iPad</label>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <div class="form-check form-switch ">
+                  <input class="form-check-input" type="checkbox" role="switch" id="Generate PDF from Edit Mode" >
+                  <label class="form-check-label" for="Generate PDF from Edit Mode">
+                    
+Enable Web Notification</label>
+                </div>
+              </li>
+
+
+              <li class="nav-item">
+                <div class="form-check form-switch ">
+                  <input class="form-check-input" type="checkbox" role="switch" id="Generate PDF from Edit Mode" >
+                  <label class="form-check-label" for="Generate PDF from Edit Mode">
+                    
+Allow user switching on iPad</label>
+                </div>
+              </li>
+
+
+              <li class="nav-item">
+                <div class="form-check form-switch ">
+                  <input class="form-check-input" type="checkbox" role="switch" id="Generate PDF from Edit Mode" >
+                  <label class="form-check-label" for="Generate PDF from Edit Mode">
+                    Don't Show Deal Type</label>
+                </div>
+              </li>
+
+
+
+              <li class="nav-item">
+                <div class="form-check form-switch ">
+                  <input class="form-check-input" type="checkbox" role="switch" id="Generate PDF from Edit Mode" >
+                  <label class="form-check-label" for="Generate PDF from Edit Mode">
+                    
+Don't Auto Add Always Forms</label>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <div class="form-check form-switch ">
+                  <input class="form-check-input" type="checkbox" role="switch" id="Generate PDF from Edit Mode" >
+                  <label class="form-check-label" for="Generate PDF from Edit Mode">
+                   
+Auto Add forms from Extension Button</label>
+                </div>
+              </li>
+
+
+              <li class="nav-item">
+                <div class="form-check form-switch ">
+                  <input class="form-check-input" type="checkbox" role="switch" id="Generate PDF from Edit Mode" >
+                  <label class="form-check-label" for="Generate PDF from Edit Mode">
+                    Auto Add forms from Drag</label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+     
+        </ul>
+        <div class="mt-auto"></div>
+    
+            <!-- User (md) -->
+            <div class="navbar-user d-none d-md-flex" id="sidebarUser">
+    
+              <!-- Icon -->
+              <div class="dropup">
+      
+                <!-- Toggle -->
+                <a href="#" id="sidebarIconCopy" class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <div class="avatar avatar-sm avatar-online">
+                    <img src="img/avatars/profiles/avatar-1.jpg" class="avatar-img rounded-circle" alt="...">
+                  </div>
+                </a>
+    
+                <!-- Menu -->
+                <div class="dropdown-menu" aria-labelledby="sidebarIconCopy">
+                  <a href="../profile-posts.html" class="dropdown-item">Profile</a>
+                  <a href="../account-general.html" class="dropdown-item">Settings</a>
+                  <hr class="dropdown-divider">
+                  <a href="../sign-in.html" class="dropdown-item">Logout</a>
+                </div>
+    
+              </div>
+              <!-- Dropup -->
+             
+    
+        </div> <!-- / .navbar-collapse -->
+    
       </div>
-    </div>
+    </nav>
+
+  </div>
+   
 
 
     </div>
@@ -1762,65 +453,72 @@
         <div class="row justify-content-center">
           <div class="col-12">
             <!-- Header -->
+
+            
             <div class="header">
               <div class="header-body">
-                <div class="row align-items-center">
-                  <div class="col">
-                  
-                  </div>
-                  <div class="col-auto">
-            
-                  </div>
-                </div>
-                <!-- / .row -->
-                <div class="row align-items-center">
-                  <h2 class="text-center">
-                    <span class="color-green"> E-Sign</span>
-                  any Document with Tap to Sign
-                </h2>
-                </div>
-             
-                <div class="row align-items-center">
-                  <div class="col mx-auto text-center">
-                    <button type="button" class="btn btn-primary rounded-5 btn-custom"><ion-icon name="document-outline"></ion-icon><span>Form library</span></button>
-                    <button type="button" class="btn btn-primary rounded-5  btn-custom"> <ion-icon name="cloud-upload-outline"></ion-icon><span>Upload a form</span></button>
-                    <button type="button" class="btn btn-primary rounded-5  btn-custom"> <ion-icon name="file-tray-full-outline"></ion-icon><span>Request Stip</span></button>
-                    <button type="button" class="btn btn-primary rounded-5  btn-custom">  <ion-icon name="cloud-upload-outline"></ion-icon><span>Get refrences</span></button>
-                    <button type="button" class="btn btn-primary rounded-5  btn-custom">  <ion-icon name="cloud-upload-outline"></ion-icon><span>Get Credit App</span></button>
+              
 
-                    <!-- Nav -->
-                    <!-- <ul class="nav nav-tabs nav-overflow header-tabs">
-                      <li class="nav-item">
-                        <a href="#!" class="nav-link text-nowrap active">
-                          All contacts
-                          <span
-                            class="badge rounded-pill text-bg-secondary-subtle"
-                            >823</span
-                          >
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="#!" class="nav-link text-nowrap">
-                          Your contacts
-                          <span
-                            class="badge rounded-pill text-bg-secondary-subtle"
-                            >231</span
-                          >
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="#!" class="nav-link text-nowrap">
-                          Deleted
-                          <span
-                            class="badge rounded-pill text-bg-secondary-subtle"
-                            >22</span
-                          >
-                        </a>
-                      </li>
-                    </ul> -->
+                  <div class="row align-items-center">
+                    <div class="col">
+      
+                      <!-- Pretitle -->
+                      <h6 class="header-pretitle">
+                        Overview
+                      </h6>
+      
+                      <!-- Title -->
+                      <h1 class="header-title text-truncate">
+                        Deals
+                      </h1>
+      
+                    </div>
+             
+
+                    <div class="col-auto">
+      
+            
+                      <!-- Buttons -->
+                      <div class="btn-group mb-2">
+                        <button type="button" class="btn btn-primary">
+
+                          <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-upload"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M12 11v6" /><path d="M9.5 13.5l2.5 -2.5l2.5 2.5" /></svg>
+                          <span>Upload Form</span>
+                          </button>
+                        
+                        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu" style="">
+                          <a class="dropdown-item" href="#">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-upload"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M12 11v6" /><path d="M9.5 13.5l2.5 -2.5l2.5 2.5" /></svg>
+                            <span>Upload Form</span>
+                          </a>
+                          <a class="dropdown-item" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-library" ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7 3m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z"></path><path d="M4.012 7.26a2.005 2.005 0 0 0 -1.012 1.737v10c0 1.1 .9 2 2 2h10c.75 0 1.158 -.385 1.5 -1"></path><path d="M11 7h5"></path><path d="M11 10h6"></path><path d="M11 13h3"></path></svg>
+                            <span>Form Library</span></a>
+                          <a class="dropdown-item" href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M14 3v4a1 1 0 0 0 1 1h4"></path><path d="M5 13v-8a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2h-5.5m-9.5 -2h7m-3 -3l3 3l-3 3"></path></svg>
+                            <span>Request Stips</span></a>
+                          <a class="dropdown-item" href="#">
+                            <svg  width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M14 3v4a1 1 0 0 0 1 1h4"></path><path d="M5 13v-8a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2h-5.5m-9.5 -2h7m-3 -3l3 3l-3 3"></path></svg>
+                            <span>Get References</span></a>
+                          <a class="dropdown-item" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-form" ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M14 3v4a1 1 0 0 0 1 1h4"></path><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"></path><path d="M8 10h8"></path><path d="M8 14h6"></path><path d="M8 18h4"></path></svg>
+
+                            <span>Get Credit App</span></a>
+                         
+
+                        
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
+                
+             
+           
+        
             </div>
 
             <!-- Tab content -->
@@ -1899,7 +597,7 @@
                     >
                       <thead>
                         <tr>
-                          <th>
+                          <!-- <th>
                         
                             
                             <div class="form-check mb-n2">
@@ -1913,7 +611,7 @@
                                 for="listCheckboxAll"
                               ></label>
                             </div>
-                          </th>
+                          </th> -->
                           <th>
                           
                             <div class="btn-group">
@@ -1921,32 +619,43 @@
                                 All Deals
                               </button>
                               <ul class="dropdown-menu">
+                                <li  >
+                                  
+                                  <form class="dropdown-item ">
+                                    <div class="input-group input-group-flush input-group-merge input-group-reverse border px-2 rounded">
+                                      <input class="form-control list-search" type="search" placeholder="Search">
+                                      <span class="input-group-text">
+                                        <ion-icon name="search-outline" role="img" class="md hydrated"></ion-icon>
+                                      </span>
+                                    </div>
+                                  </form>
+                                </li>
                                 <li >
-                                  <label  class="dropdown-item" >
+                                  <label  class="dropdown-item d-flex align-items-center gap-2" >
                                     <input type="checkbox"> 
-                                    <span>Test drive</span>
+                                    <span class="fs-5">Test drive</span>
                                   </label>
                                 </li>
 
                                 <li >
-                                  <label  class="dropdown-item" >
+                                  <label  class="dropdown-item  d-flex align-items-center gap-2" >
                                     <input type="checkbox"> 
-                                    <span>WholeSell</span>
+                                    <span class="fs-5">WholeSell</span>
                                   </label>
                                 </li>
                           
 
                                 <li >
-                                  <label  class="dropdown-item" >
+                                  <label  class="dropdown-item  d-flex align-items-center gap-2" >
                                     <input type="checkbox"> 
-                                    <span>Work sheet</span>
+                                    <span class="fs-5">Work sheet</span>
                                   </label>
                                 </li>
 
                                 <li >
-                                  <label  class="dropdown-item" >
+                                  <label  class="dropdown-item  d-flex align-items-center gap-2" >
                                     <input type="checkbox"> 
-                                    <span>Car buying</span>
+                                    <span class="fs-5">Car buying</span>
                                   </label>
                                 </li>
                               </ul>
@@ -1966,37 +675,45 @@
                                 All SalePerson
                               </button>
                               <ul class="dropdown-menu">
+                                <li  >
+                                  
+                                  <form class="dropdown-item ">
+                                    <div class="input-group input-group-flush input-group-merge input-group-reverse border px-2 rounded">
+                                      <input class="form-control list-search" type="search" placeholder="Search">
+                                      <span class="input-group-text">
+                                        <ion-icon name="search-outline" role="img" class="md hydrated"></ion-icon>
+                                      </span>
+                                    </div>
+                                  </form>
+                                </li>
                                 <li >
-                                  <label  class="dropdown-item" >
+                                  <label  class="dropdown-item d-flex align-items-center gap-2" >
                                     <input type="checkbox"> 
-                                    <span>Test drive</span>
+                                    <span class="fs-5">Test drive</span>
                                   </label>
                                 </li>
 
                                 <li >
-                                  <label  class="dropdown-item" >
+                                  <label  class="dropdown-item  d-flex align-items-center gap-2" >
                                     <input type="checkbox"> 
-                                    <span>WholeSell</span>
+                                    <span class="fs-5">WholeSell</span>
                                   </label>
                                 </li>
                           
 
                                 <li >
-                                  <label  class="dropdown-item" >
+                                  <label  class="dropdown-item  d-flex align-items-center gap-2" >
                                     <input type="checkbox"> 
-                                    <span>Work sheet</span>
+                                    <span class="fs-5">Work sheet</span>
                                   </label>
                                 </li>
 
                                 <li >
-                                  <label  class="dropdown-item" >
+                                  <label  class="dropdown-item  d-flex align-items-center gap-2" >
                                     <input type="checkbox"> 
-                                    <span>Car buying</span>
+                                    <span class="fs-5">Car buying</span>
                                   </label>
                                 </li>
-                              
-                              
-                              
                               </ul>
                             </div>
                           </th>
@@ -2014,37 +731,45 @@
                                 All Deals
                               </button>
                               <ul class="dropdown-menu">
+                                <li  >
+                                  
+                                  <form class="dropdown-item ">
+                                    <div class="input-group input-group-flush input-group-merge input-group-reverse border px-2 rounded">
+                                      <input class="form-control list-search" type="search" placeholder="Search">
+                                      <span class="input-group-text">
+                                        <ion-icon name="search-outline" role="img" class="md hydrated"></ion-icon>
+                                      </span>
+                                    </div>
+                                  </form>
+                                </li>
                                 <li >
-                                  <label  class="dropdown-item" >
+                                  <label  class="dropdown-item d-flex align-items-center gap-2" >
                                     <input type="checkbox"> 
-                                    <span>Test drive</span>
+                                    <span class="fs-5">Test drive</span>
                                   </label>
                                 </li>
 
                                 <li >
-                                  <label  class="dropdown-item" >
+                                  <label  class="dropdown-item  d-flex align-items-center gap-2" >
                                     <input type="checkbox"> 
-                                    <span>WholeSell</span>
+                                    <span class="fs-5">WholeSell</span>
                                   </label>
                                 </li>
                           
 
                                 <li >
-                                  <label  class="dropdown-item" >
+                                  <label  class="dropdown-item  d-flex align-items-center gap-2" >
                                     <input type="checkbox"> 
-                                    <span>Work sheet</span>
+                                    <span class="fs-5">Work sheet</span>
                                   </label>
                                 </li>
 
                                 <li >
-                                  <label  class="dropdown-item" >
+                                  <label  class="dropdown-item  d-flex align-items-center gap-2" >
                                     <input type="checkbox"> 
-                                    <span>Car buying</span>
+                                    <span class="fs-5">Car buying</span>
                                   </label>
                                 </li>
-                              
-                              
-                              
                               </ul>
                             </div>
                           </th>
@@ -2054,37 +779,45 @@
                                 Date
                               </button>
                               <ul class="dropdown-menu">
+                                <li  >
+                                  
+                                  <form class="dropdown-item ">
+                                    <div class="input-group input-group-flush input-group-merge input-group-reverse border px-2 rounded">
+                                      <input class="form-control list-search" type="search" placeholder="Search">
+                                      <span class="input-group-text">
+                                        <ion-icon name="search-outline" role="img" class="md hydrated"></ion-icon>
+                                      </span>
+                                    </div>
+                                  </form>
+                                </li>
                                 <li >
-                                  <label  class="dropdown-item" >
+                                  <label  class="dropdown-item d-flex align-items-center gap-2" >
                                     <input type="checkbox"> 
-                                    <span>Test drive</span>
+                                    <span class="fs-5">Test drive</span>
                                   </label>
                                 </li>
 
                                 <li >
-                                  <label  class="dropdown-item" >
+                                  <label  class="dropdown-item  d-flex align-items-center gap-2" >
                                     <input type="checkbox"> 
-                                    <span>WholeSell</span>
+                                    <span class="fs-5">WholeSell</span>
                                   </label>
                                 </li>
                           
 
                                 <li >
-                                  <label  class="dropdown-item" >
+                                  <label  class="dropdown-item  d-flex align-items-center gap-2" >
                                     <input type="checkbox"> 
-                                    <span>Work sheet</span>
+                                    <span class="fs-5">Work sheet</span>
                                   </label>
                                 </li>
 
                                 <li >
-                                  <label  class="dropdown-item" >
+                                  <label  class="dropdown-item  d-flex align-items-center gap-2" >
                                     <input type="checkbox"> 
-                                    <span>Car buying</span>
+                                    <span class="fs-5">Car buying</span>
                                   </label>
                                 </li>
-                              
-                              
-                              
                               </ul>
                             </div>
                           </th>
@@ -2101,8 +834,7 @@
                       <tbody class="list fs-base">
                         
                         <tr>
-                          <td>
-                            <!-- Checkbox -->
+                          <!-- <td>
                             <div class="form-check">
                               <input
                                 class="form-check-input list-checkbox"
@@ -2114,7 +846,7 @@
                                 for="listCheckboxSeventeen"
                               ></label>
                             </div>
-                          </td>
+                          </td> -->
                           <td>
                           
                             <a
@@ -2132,8 +864,9 @@
                             <a
                               class="item-email text-reset"
                               href="mailto:john.doe@company.com"
-                              >natnaell70a@gmail.com</a
-                            >
+                              >natnael Abebaw
+                              </a>
+                              <div class="fs-5 text-secondary">AutoNow finacial service inc.</div>
                           </td>
                           <td>
                             <!-- Phone -->
@@ -2142,10 +875,10 @@
                               href="tel:1-123-456-7890"
                               >(689) 263-4856</a
                             > -->
-                           
-
+                            
+                            
                             <div class="btn-group mb-2">
-                              <button type="button" class="btn custom-btn">Still Preparing</button>
+                            <button type="button" class="btn custom-btn text-secondary">Still Preparing</button>
                               <button type="button" class="btn custom-btn custom-btn-last dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="visually-hidden">Toggle Dropdown</span>
                             
@@ -2171,7 +904,7 @@
                                   <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M12 11l0 6" /><path d="M9 14l6 0" /></svg>
                                   <span> Add Stips From App</span>
                                 </div>
-                                </>
+                                </d>
                                  </a></li>
                                  <div class="dropdown-divider"></div>
                                 <li><a class="dropdown-item" href="#">
@@ -2189,19 +922,20 @@
                           <td>
                             <!-- Badge -->
                             <span class="item-score badge text-bg-danger-subtle"
-
                               >
-                              <ion-icon name="create-outline"></ion-icon>
+                            
                               Preparing</span
                             >
                           </td>
                           <td>
                             <!-- Link -->
-                            <a
-                              class="item-company text-reset"
-                              href="team-overview.html"
-                              >22/01/2025 20:23</a
+                            <div
+                            class=" d-flex flex-column fs-5 text-secondary"
+                            href="team-overview.html"
                             >
+                            <span>22/01/2025</span>
+                            <span>20:23 PM</span>
+                        </div>
                           </td>
 
                         
@@ -2278,8 +1012,8 @@
                     
 
                         <tr>
-                          <td>
-                            <!-- Checkbox -->
+                          <!-- <td>
+                          
                             <div class="form-check">
                               <input
                                 class="form-check-input list-checkbox"
@@ -2291,7 +1025,7 @@
                                 for="listCheckboxSeventeen"
                               ></label>
                             </div>
-                          </td>
+                          </td> -->
                           <td>
                           
                             <a
@@ -2307,10 +1041,11 @@
                           <td>
                             <!-- Email -->
                             <a
-                              class="item-email text-reset"
-                              href="mailto:john.doe@company.com"
-                              >natnaell70a@gmail.com</a
-                            >
+                            class="item-email text-reset"
+                            href="mailto:john.doe@company.com"
+                            >natnael Abebaw
+                            </a>
+                            <div class="fs-5 text-secondary">AutoNow finacial service inc.</div>
                           </td>
                           <td>
                             <!-- Phone -->
@@ -2322,7 +1057,7 @@
                            
 
                             <div class="btn-group mb-2">
-                              <button type="button" class="btn custom-btn">Still Preparing</button>
+                              <button type="button" class="btn custom-btn text-secondary">Still Preparing</button>
                               <button type="button" class="btn custom-btn custom-btn-last dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="visually-hidden">Toggle Dropdown</span>
                             
@@ -2365,20 +1100,20 @@
                           </td>
                           <td>
                             <!-- Badge -->
-                            <span class="item-score badge text-bg-danger-subtle"
-
-                              >
-                              <ion-icon name="create-outline"></ion-icon>
+                            <span class="item-score badge text-bg-danger-subtle">
+                             
                               Preparing</span
                             >
                           </td>
                           <td>
                             <!-- Link -->
-                            <a
-                              class="item-company text-reset"
-                              href="team-overview.html"
-                              >22/01/2025 20:23</a
+                            <div
+                            class=" d-flex flex-column fs-5 text-secondary"
+                            href="team-overview.html"
                             >
+                            <span>22/01/2025</span>
+                            <span>20:23 PM</span>
+                        </div>
                           </td>
 
                         
@@ -2455,8 +1190,7 @@
                     
 
                         <tr>
-                          <td>
-                            <!-- Checkbox -->
+                          <!-- <td>
                             <div class="form-check">
                               <input
                                 class="form-check-input list-checkbox"
@@ -2468,7 +1202,7 @@
                                 for="listCheckboxSeventeen"
                               ></label>
                             </div>
-                          </td>
+                          </td> -->
                           <td>
                           
                             <a
@@ -2484,10 +1218,11 @@
                           <td>
                             <!-- Email -->
                             <a
-                              class="item-email text-reset"
-                              href="mailto:john.doe@company.com"
-                              >natnaell70a@gmail.com</a
-                            >
+                            class="item-email text-reset"
+                            href="mailto:john.doe@company.com"
+                            >natnael Abebaw
+                            </a>
+                            <div class="fs-5 text-secondary">AutoNow finacial service inc.</div>
                           </td>
                           <td>
                             <!-- Phone -->
@@ -2499,7 +1234,7 @@
                            
 
                             <div class="btn-group mb-2">
-                              <button type="button" class="btn custom-btn">Still Preparing</button>
+                              <button type="button" class="btn custom-btn text-secondary">Still Preparing</button>
                               <button type="button" class="btn custom-btn custom-btn-last dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="visually-hidden">Toggle Dropdown</span>
                             
@@ -2542,20 +1277,20 @@
                           </td>
                           <td>
                             <!-- Badge -->
-                            <span class="item-score badge text-bg-danger-subtle"
-
-                              >
-                              <ion-icon name="create-outline"></ion-icon>
+                            <span class="item-score badge text-bg-danger-subtle">
+                           
                               Preparing</span
                             >
                           </td>
                           <td>
                             <!-- Link -->
-                            <a
-                              class="item-company text-reset"
-                              href="team-overview.html"
-                              >22/01/2025 20:23</a
+                            <div
+                            class=" d-flex flex-column fs-5 text-secondary"
+                            href="team-overview.html"
                             >
+                            <span>22/01/2025</span>
+                            <span>20:23 PM</span>
+                        </div>
                           </td>
 
                         
@@ -2632,8 +1367,7 @@
                     
 
                         <tr>
-                          <td>
-                            <!-- Checkbox -->
+                          <!-- <td>
                             <div class="form-check">
                               <input
                                 class="form-check-input list-checkbox"
@@ -2645,7 +1379,7 @@
                                 for="listCheckboxSeventeen"
                               ></label>
                             </div>
-                          </td>
+                          </td> -->
                           <td>
                           
                             <a
@@ -2661,10 +1395,11 @@
                           <td>
                             <!-- Email -->
                             <a
-                              class="item-email text-reset"
-                              href="mailto:john.doe@company.com"
-                              >natnaell70a@gmail.com</a
-                            >
+                            class="item-email text-reset"
+                            href="mailto:john.doe@company.com"
+                            >natnael Abebaw
+                            </a>
+                            <div class="fs-5 text-secondary">AutoNow finacial service inc.</div>
                           </td>
                           <td>
                             <!-- Phone -->
@@ -2676,7 +1411,7 @@
                            
 
                             <div class="btn-group mb-2">
-                              <button type="button" class="btn custom-btn">Still Preparing</button>
+                              <button type="button" class="btn custom-btn text-secondary">Still Preparing</button>
                               <button type="button" class="btn custom-btn custom-btn-last dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="visually-hidden">Toggle Dropdown</span>
                             
@@ -2719,20 +1454,19 @@
                           </td>
                           <td>
                             <!-- Badge -->
-                            <span class="item-score badge text-bg-danger-subtle"
-
-                              >
-                              <ion-icon name="create-outline"></ion-icon>
+                            <span class="item-score badge text-bg-danger-subtle">
                               Preparing</span
                             >
                           </td>
                           <td>
                             <!-- Link -->
-                            <a
-                              class="item-company text-reset"
+                            <div
+                              class=" d-flex flex-column fs-5 text-secondary"
                               href="team-overview.html"
-                              >22/01/2025 20:23</a
-                            >
+                              >
+                              <span>22/01/2025</span>
+                              <span>20:23 PM</span>
+                          </div>
                           </td>
 
                         
