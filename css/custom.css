@@ -185,6 +185,10 @@ body {
   transform: translateX(5px);
 }
 
+.sidebar-link::before {
+  display: none;
+}
+
 .sidebar-link.active {
   color: #ffffff;
   background: rgba(255, 255, 255, 0.1);
@@ -294,4 +298,49 @@ body {
     width: 100%;
     margin-left: 0;
   }
+}
+
+.dropdown-item-padding {
+  padding: 5px 20px 5px 10px;
+}
+
+.btn-dropdown-custom:hover {
+  background-color: #f7cc5f !important; /* Change background */
+  color: white !important; /* Change text color */
+  /* transform: scale(1.05); Slightly enlarge the button */
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.air-datepicker-global-container {
+  z-index: 9999 !important;
+}
+
+#dropdown-menu-date {
+  min-width: 200px !important;
+}
+
+#datepicker {
+  border: none;
+  font-size: 12px;
+  padding: 5px 10px;
+  background-color: #f9fbfd;
+  border-radius: 5px;
+  color: #555;
+  border: 1px solid #eee;
+}
+
+#datepicker:focus {
+  border: 1px solid #95aac9;
+}
+
+.input-group-text {
+  margin-left: 3px !important;
+}
+
+.list-search {
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 1px 10px;
+  font-size: 14px;
 }
