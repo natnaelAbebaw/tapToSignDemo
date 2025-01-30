@@ -65,6 +65,10 @@
   border: none;
 }
 
+.btn-custom-2-padding-2 {
+  padding: 2px 10px !important;
+}
+
 .btn-custom-2:hover {
   background-color: #e4effa;
   border: 1px solid #bcd3f6;
@@ -305,8 +309,8 @@ body {
 }
 
 .btn-dropdown-custom:hover {
-  background-color: #f7cc5f !important; /* Change background */
-  color: white !important; /* Change text color */
+  background-color: #f9fbfd !important; /* Change background */
+  color: #000 !important; /* Change text color */
   /* transform: scale(1.05); Slightly enlarge the button */
   transition: all 0.3s ease-in-out;
   cursor: pointer;
@@ -343,4 +347,71 @@ body {
   border-radius: 5px;
   padding: 1px 10px;
   font-size: 14px;
+}
+
+.postition-bottom-right {
+  bottom: 50px;
+  right: 50px;
+  z-index: 9999;
+}
+.color-grey {
+  color: #3d4653;
+}
+
+.signup-heading {
+  font-size: 40px !important;
+  font-weight: 700;
+  color: #192033;
+  line-height: 50px;
+}
+
+.bg-opacity {
+  background-color: rgba(184, 134, 11, 0.3);
+}
+
+.dots {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.dots div {
+  background-color: #192033;
+  opacity: 0.1;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+
+.dots div.active {
+  opacity: 1;
+  background-color: #192033;
+}
+
+.dots.active {
+  background-color: #333;
+}
+.styled-container {
+  width: 70% !important;
+}
+
+.slider {
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+
+  transition: all 0.3s ease;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.continueGoogle {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
