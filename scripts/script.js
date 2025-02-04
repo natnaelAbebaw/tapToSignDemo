@@ -200,13 +200,7 @@ function renderDeals() {
         deal.Model
       } </a
                               >
-                              <div class="fs-5 text-secondary">
-                              ${deal.TradeYear ? deal.TradeYear : deal.Year}
-                              ${deal.Vin ? deal.Vin : deal.TradeModel}
-                              ${!deal.Make && !deal.TradeMake ? "—" : ""}
-                              
-                              </div>
-                              
+                           
                             </td>
                             <td>
                               <!-- Email -->
