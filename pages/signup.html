@@ -61,16 +61,20 @@
             <div class="row g-0">
               <div class="col-xl-5 d-none d-xl-block p-3">
                 <div
-                  class="w-100 h-100 bg-warning rounded-3 px-4 py-5 d-flex flex-column"
+                  class="w-100 h-100 bg-warning rounded-3 px-4 py-5 d-flex flex-column gap-2"
                 >
-                  <h1 class="fs-2 mb-6">Tap to sign</h1>
+                  <h1 class="fs-2 mb-1">Tap to sign</h1>
+                  <div class="fs-5 mb-6">
+                   <div> 30-Day Free Trial</div>
+                   <div>No Credit Card Required - Cancel Anytime</div>
+                  </div>
                   <p class="signup-heading">Start your journey with us.</p>
 
-                  <p class="fs-4">
+                  <p class="fs-4 ">
                     Tap to Sign – The Fastest, Easiest Way to Sign Documents
                     Electronically. Join Now and Simplify Your Workflow!
                   </p>
-
+        
                   <div class="mt-auto">
                     <div class="slider">
                       <div class="slides">
@@ -192,7 +196,7 @@
                   </h4>
 
                   <div class="row">
-                    <div class="col-md-6 mb-2">
+                    <div class="col-md-12 mb-2">
                       <div class="col-12">
                         <div class="form-floating mb-3">
                           <input
@@ -204,31 +208,13 @@
                             required
                           />
                           <label for="FristName" class="form-label"
-                            >First Name</label
+                            >Full Name</label
                           >
                         </div>
                       </div>
                     </div>
 
-                    <div class="col-md-6 mb-2">
-                      <div class="col-12">
-                        <div class="form-floating mb-3">
-                          <input
-                            type="text"
-                            class="form-control"
-                            name="lastName"
-                            id="lastName"
-                            placeholder="Last Name"
-                            required
-                          />
-                          <label for="lastName" class="form-label"
-                            >Last Name</label
-                          >
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6 mb-2">
+                    <div class="col-md-12 mb-2">
                       <div class="form-floating mb-3">
                         <input
                           type="email"
@@ -242,7 +228,7 @@
                       </div>
                     </div>
 
-                    <div class="col-md-6 mb-2">
+                    <div class="col-md-12 mb-2">
                       <div class="form-floating mb-3">
                         <input
                           type="text"
@@ -258,7 +244,7 @@
                       </div>
                     </div>
 
-                    <div class="col-md-6 mb-2">
+                    <div class="col-md-12 mb-2">
                       <div class="form-floating mb-3">
                         <input
                           type="password"
@@ -273,22 +259,15 @@
                         >
                       </div>
                     </div>
+                  </div>
 
-                    <div class="col-md-6 mb-2">
-                      <div class="form-floating mb-3">
-                        <input
-                          type="password"
-                          class="form-control"
-                          name="ConfirmPassword"
-                          id="ConfirmPassword"
-                          placeholder="Confirm Password"
-                          required
-                        />
-                        <label for="ConfirmPassword" class="form-label"
-                          >Confirm Password</label
-                        >
-                      </div>
-                    </div>
+                  <div class="d-flex gap-2 ms-2">
+                    <input class="form-check-input" type="checkbox" name="" id="" />
+
+                    <label for="terms" class="form-label ">
+                      I agree to the
+                      <a href="#" class="text-warning">Terms of Service</a> and
+                      <a href="#" class="text-warning">Privacy Policy</a>
                   </div>
 
                   <div class="d-flex justify-content-end pt-3 mb-4">
@@ -303,7 +282,7 @@
                     </button>
                   </div>
 
-                  <div class="row mb-4">
+                  <!-- <div class="row mb-4">
                     <div class="col"><hr /></div>
                     <div
                       class="col-auto text-uppercase d-flex align-items-center"
@@ -311,9 +290,9 @@
                       Or
                     </div>
                     <div class="col"><hr /></div>
-                  </div>
+                  </div> -->
 
-                  <div class="d-flex flex-column align-items-center gap-3">
+                  <!-- <div class="d-flex flex-column align-items-center gap-3">
                     <a
                       class="btn btn-google btn-lg position-relative border border-secondary-subtle w-100"
                       id="google-signup"
@@ -337,7 +316,7 @@
                         >Continue with Apple</span
                       ></a
                     >
-                  </div>
+                  </div> -->
 
                   <div class="text-center mb-2">
                     Already have an account?
@@ -358,6 +337,6 @@
       </div>
     </div>
 
-    <script type="module" src="../script.js"></script>
+    <script type="module" src="../scripts/signup.js"></script>
   </body>
 </html>
