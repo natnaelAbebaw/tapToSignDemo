@@ -39,6 +39,11 @@ loginForm.addEventListener("submit", function (e) {
     .then((response) => response.json())
     .then((data) => {
       console.log(data.auth_token);
+      if (!data.auth_token) {
+        alert("incorrect email or password");
+
+        return;
+      }
 
       document.cookie = `auth_token=${data.auth_token}; path=/; Secure; SameSite=None`;
       document.cookie = `auth_token=${data.auth_token}; path=/; Secure; domain=taptosign.com; SameSite=None`;
