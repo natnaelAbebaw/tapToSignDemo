@@ -123,8 +123,8 @@ function renderDeals() {
       "beforeend",
       `
       <tr>
-               <!-- <td>
-                        <div class="form-check">
+            <!-- <td>
+                    <div class="form-check">
                                 <input
                                   class="form-check-input list-checkbox"
                                   type="checkbox"
@@ -223,14 +223,11 @@ function renderDeals() {
                                 }</div>
                             </td>
                             <td>
-                           
                               <div class="btn-group mb-2">
                               <button type="button" class="btn custom-btn text-secondary">Still Preparing</button>
-                                <button type="button" class="btn custom-btn custom-btn-last dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <button type="button" class="btn custom-btn custom-btn-last dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                   <span class="visually-hidden">Toggle Dropdown</span>
-                              
                                 </button>
-                                
                                 <ul class="dropdown-menu">
                                   <li><a class="dropdown-item" href="#">
                                     <div class="d-flex align-items-center gap-2">
