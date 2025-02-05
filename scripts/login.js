@@ -43,7 +43,7 @@ loginForm.addEventListener("submit", function (e) {
       document.cookie = `auth_token=${data.auth_token}; path=/; Secure; SameSite=None`;
       document.cookie = `auth_token=${data.auth_token}; path=/; Secure; domain=taptosign.com; SameSite=None`;
 
-      window.location.href = "/index.html";
+      window.location.href = "/tapToSignDemo/index.html";
     })
 
     .catch((error) => console.error("Error:", error));

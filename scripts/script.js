@@ -73,7 +73,7 @@ function getToken() {
 }
 
 if (!getToken()) {
-  window.location.href = "/pages/login.html";
+  window.location.href = "/tapToSignDemo/pages/login.html";
 }
 
 // Set headers
