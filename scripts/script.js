@@ -61,6 +61,21 @@ const params = {
 };
 Object.keys(params).forEach((key) => url.searchParams.append(key, params[key]));
 
+function getToken() {
+  let cookies = document.cookie.split("; ");
+  for (let cookie of cookies) {
+    let [name, value] = cookie.split("=");
+    if (name === "auth_token") {
+      return value;
+    }
+  }
+  return null;
+}
+
+if (!getToken()) {
+  window.location.href = "/pages/login.html";
+}
+
 // Set headers
 const headers = {
   accept: "*/*",
@@ -68,10 +83,6 @@ const headers = {
   "accept-language": "en-US,en;q=0.9",
   "content-length": "0",
   "content-type": "text/plain; charset=utf-8",
-  Cookie:
-    "auth_account_token=gr8nZLak8JjTktoXOAK-CNuwLunGKrgBYKSz3FuLmuRMNWqQa0OTMAwzhkYnwr6F755WURG4wd37JI4D8qUxn1r94DKFAPE0UOrnKboZlHJn5cz-VvHYB-ITrU7Yx3xECFVF2d3azYBqUHJT_KpQJlVfoLcsw7zmEw-qQiDl6WWHaqC554PK_J33yGvliOr6Npry6MINpGCbd0fvlxETD9ipXaL91JBaLYmYb58FUF7N5SgDpor8PYDRVo9uv_3Vo4JFjqwMWjEI_0aSDXz8did4co6VUXTUHMCaPLBUKWLcGQ==; auth_token=c5qcnQQ75XxUiuPYGJgBiWgwQgNIRHSNUalS0dis9Zpn7J2r3p8wS-0cVfFCGvB6GHsnxeErut6dBnliPMmNzv0NGJOPjX4i7cUnIU-4vuIdrLI06h4Y5NICvcyrp68Q8yAqJnggLaA10Q3GS8dAB0QvReAhfP9zf9vZ7g2r9bC_9-sHD2y5tdlCbrTsiP3vAQBpJfE3hVqhyo9wHqd55z-py7_YB3eeACOqKkwCWyYGnIP3ezvLGZp4acI_OVgXmqBpARGSRRQYwcvZ5VF8c0TGvIxtOSFIEH6ZWd6UVDW5Z_ItBQw=; dealId=1738613814994406100; SalesPersonId=1626114286681592600",
-  origin: "https://taptosign.com",
-  referer: "https://taptosign.com/dashboard.html",
   "user-agent":
     "Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.188 Safari/537.36 CrKey/1.54.250320",
 };
@@ -89,7 +100,6 @@ fetch(url, {
   .then((data) => {
     deals = data.data;
     document.dispatchEvent(loadEvent);
-
     // console.log(deals);
   })
 
@@ -113,8 +123,8 @@ function renderDeals() {
       "beforeend",
       `
       <tr>
-                   <!-- <td>
-                              <div class="form-check">
+               <!-- <td>
+                        <div class="form-check">
                                 <input
                                   class="form-check-input list-checkbox"
                                   type="checkbox"
@@ -198,9 +208,7 @@ function renderDeals() {
                                 href="profile-posts.html"
                                 > ${deal.Make ? deal.Make : deal.TradeMake} ${
         deal.Model
-      } </a
-                              >
-                           
+      } </a> 
                             </td>
                             <td>
                               <!-- Email -->

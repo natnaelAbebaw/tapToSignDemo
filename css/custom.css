@@ -444,3 +444,7 @@ body {
 .hidden {
   display: none;
 }
+
+.styled-container-2 {
+  width: 500px !important;
+}
